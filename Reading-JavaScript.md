@@ -1,3 +1,5 @@
+<pre><code>
+```javascript
 document.addEventListener("DOMContentLoaded", function() {
   "use strict"
 
@@ -28,3 +30,5 @@ document.addEventListener("DOMContentLoaded", function() {
       e.preventDefault()
     }) 
 })
+</code></pre>
+
