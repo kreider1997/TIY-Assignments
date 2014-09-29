@@ -1,4 +1,3 @@
-<pre><code>
 ```javascript
   var links = document.querySelectorAll("a.scroll")
 ```
@@ -52,5 +51,5 @@ var i = links.length
 *  evaluates `duration` and `requestAnimationFrame(scroll)`
 
 
-</code></pre>
+
 
