@@ -44,7 +44,8 @@ var i = links.length
         root.scrollTop = progress
         elapsed < duration && requestAnimationFrame(scroll)
       }   
-    ```
+```
+    
 *  while condition true = `links.item(i).addEventListener`
 *  while condition false = `requestAnimationFrame(scroll)`
 *  logical AND statment '&&'
