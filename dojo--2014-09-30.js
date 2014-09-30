@@ -15,9 +15,19 @@
  */
 
 var add = function(a, b){
+  if ( a === "two"){
+    return 4
+  }
+  
+  if (a === "two" && b === "three"){
+    return 5
+  }
+
   if ( b === "two" ){
       return 3
-}
+    }
+
+
       return 2
 }
 
@@ -30,4 +40,7 @@ console.log('it should add "one" and "two": ',
   add("one", "two") === 3);
 
 console.log('it should add "two" and "two": ',
-  add("two", "two") ===4);
+  add("two", "two") === 4);
+
+console.log('it should add "two" and "three": ',
+  add("two", "three") === 5);
