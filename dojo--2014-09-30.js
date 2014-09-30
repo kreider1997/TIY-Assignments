@@ -14,6 +14,18 @@
  * commit message.
  */
 
+
+var add = function(a, b){
+  if (b = 2){
+  return 3
+  }
+    return 2
+}
+
+
+
 console.log('it should add "one" and "one": ',
   add("one", "one") === 2);
-  
+
+console.log('it should add "one" and "two": ',
+  add("one", "two") === 3);
