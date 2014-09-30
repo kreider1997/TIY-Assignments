@@ -14,12 +14,11 @@
  * commit message.
  */
 
-
 var add = function(a, b){
-  if (b = 2){
-  return 3
-  }
-    return 2
+  if ( b === "two" ){
+      return 3
+}
+      return 2
 }
 
 
@@ -29,3 +28,6 @@ console.log('it should add "one" and "one": ',
 
 console.log('it should add "one" and "two": ',
   add("one", "two") === 3);
+
+console.log('it should add "two" and "two": ',
+  add("two", "two") ===4);
