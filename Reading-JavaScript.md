@@ -64,7 +64,7 @@ var i = links.length
    *       name:  conditional
    *       symbol:  if
 *  Keyword -
-   *       name:  
+   *       name:  output
    *       symbol:  return
 *       
 
