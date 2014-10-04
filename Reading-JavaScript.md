@@ -1,16 +1,40 @@
 ```javascript
   var links = document.querySelectorAll("a.scroll")
 ```
-*  variable = `links`
-*  value is `docuent.querySelectorAll`
+*  variable - 
+*       symbol:  links
+*       value:  `docuent.querySelectorAll`
+*  Operator -
+*       name:  assignment
+*       symbol:  =
+*       operands:  links
+*  Identifier -
+*       symbol:  ()  parentheses
+*  Type Litteral -
+*       name:  document.querySelectorAll
+*       name:  a.scroll
+*  Keyword-
+*       name:  Variable Declaration
+*       symbol:  var
+*       
   
 ~~~
 
 ```javascript
 var i = links.length
 ```
-*  variable = `i`
-*  value is `links.length`
+*  Variable -
+*       symbol:  i
+*  Operator -
+*       name:  assignment
+*       symbol:  =
+*       operand:  i
+*  Type Literal - 
+*       name:  links
+*  Keyword -
+*       name:  Variable Declaration
+*       symbol:  var
+*       
 
 ~~~
 
@@ -20,6 +44,29 @@ var i = links.length
     return c/2*((t-=2)*t*t + 2) + b
   }
 ```
+*  Variable -
+*       symbol:  easeInOutCubic
+*  Function - 
+*       name:  t, b, c, d
+*  Operator -
+*       name:  conditional 
+*       symbol:  ()
+*  Operator -
+*       name:  block
+*       symbol:  {}
+*  Operator -
+*       name:  separator
+*       symbol:  ,
+*  Keyword - 
+*       name:  Variable Declaration
+*       symbol:  var
+*  Keyword -
+*       name:  conditional
+*       symbol:  if
+*  Keyword -
+*       name:  
+*       symbol:  return
+*       
 *  variable = `eaeInOutCubic` 
 *  value is a function expression `(t, b, c, d)`
 *  that returns an if statment with two possiblities `c/2*t*t*t + b` and `c/2*((t-=2)*t*t + 2) + b`
@@ -27,29 +74,6 @@ var i = links.length
   
 ~~~
 
-```javascript
-  while (i--) 
-    links.item(i).addEventListener("click", function(e) 
-        {
-      var startTime
-      var startPos = root.scrollTop
-      var endPos = document.getElementById(/[^#]+$/.exec(this.href)[0]).getBoundingClientRect().top
-      var maxScroll = root.scrollHeight - window.innerHeight
-      var scrollEndValue = startPos + endPos < maxScroll ? endPos : maxScroll - startPos
-      var duration = 900
-      var scroll = function(timestamp) {
-        startTime = startTime || timestamp
-        var elapsed = timestamp - startTime
-        var progress = easeInOutCubic(elapsed, startPos, scrollEndValue, duration)
-        root.scrollTop = progress
-        elapsed < duration && requestAnimationFrame(scroll)
-      }   
-```
-    
-*  while condition true = `links.item(i).addEventListener`
-*  while condition false = `requestAnimationFrame(scroll)`
-*  logical AND statment '&&'
-*  evaluates `duration` and `requestAnimationFrame(scroll)`
 
 
 
