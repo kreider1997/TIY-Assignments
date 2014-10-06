@@ -137,7 +137,7 @@
 
 var assert = require('assert');
 
-
+//below sets up the board and defines the neighbors of a specific cell.  Using rw for row, cl for column.
 var board =  [
         [ false, false, false ],
         [ false, false, false ],
@@ -152,19 +152,30 @@ if (rw===0 && cl===0){
   }
 if (rw===0 && cl===1){
   neighbors = [board [0][0], board [0][2], board [1][0], board [1][1], board [1][2]];
-}
+  }
 if (rw===0 && cl===2){
   neighbors = [board [0][1], board [1][1], board[1][2]];
-}
+  }
 if (rw===1 && cl===0){
   neighbors = [board [0][0], board [0][1], board [1][1], board [2][0], board [2][1]];
-}
+  }
 if (rw===1 && cl===1){
   neighbors = [board [0][0], board [0][1], board[0][2], board[1][0], board[1][2], board[2][0], board[2][1], board[2][2]];
+  }
+if (rw===1 && cl===2){
+  neighbors = [board [0][1], board [0][2], board [1][1], board [2][1], board [2][2]];
+  }
+if (rw===2 && cl===0){
+  neighbors = [board [1][0], board [1][1], board [2][1]];
+  }
+if (rw===2 && cl===1){
+  neighbors = [board [1][0], board [1][1], board [1][2], board [2][0], board [2][2]];
+  }
+if (rw===2 && cl===2){
+  neighbors = [board [1][1], board [1][2], board [2][1]];
+  }
+return neighbors;
 }
-
-}
-
 //TEST AREA
 
 
@@ -175,3 +186,6 @@ function test(actual, expected, success){
 
     console.log(success);
 }
+
+var actual = neighborOf (board, 0, 0)
+var testb1 = neighborOf (board,)

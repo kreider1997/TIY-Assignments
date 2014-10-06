@@ -19,10 +19,11 @@
 //If (num.length 4){
 //  console.log("one");
 //}
+var digit = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 var bigWords = ["thousand", "hundred"];
 var medWords = ["ninty", "eighty", "seventy", "sixty", "fifty", "fourty", "thirty", "twenty", "-teen"]
 var smallWords = ["twelve", "eleven", "ten", "nine", "eight", "seven", "six", "five", "four", "three", "two", "one", "zero", ""]
-var num = "9.00"
+var num = "1.00"
 //We are on single digits
 if (num.length-3 === 1){
   if(num.charAt(0) == "1"){
