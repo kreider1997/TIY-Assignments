@@ -176,6 +176,31 @@ if (rw===2 && cl===2){
   }
 return neighbors;
 }
+
+//Conway area - apply rules
+var newCell;
+function conway (cell, neighbors) {
+  var livingCell = 0;
+  for (var i=0; i<neighbors.length; i++){ //you are telling the robot to cycle through the board
+      if neighbors[i] == true)
+        livingCell++;
+      }
+      if cell === true{
+        if (livingCell<2) {   //less than two cells alive, no new cell
+          newCell = false;
+        }
+        if (livingCell === 2 || livingCell === 3) {  //two or three cells alive, new cell
+          newCell = true;
+        }
+        if (livingCell >3) {  //more than three cells alive, no new cell
+          newCell = false;
+        }
+      } else {
+        newCell = false;
+        }
+      }
+      return newCell
+}
 //TEST AREA
 
 
@@ -188,4 +213,11 @@ function test(actual, expected, success){
 }
 
 var actual = neighborOf (board, 0, 0)
-var testb1 = neighborOf (board,)
+var testb1 = neighborOf (board, 0, 1)
+var testb2 = neighborOf (board, 0, 2)
+var testb3 = neighborOf (board, 1, 0)
+var testb4 = neighborOf (board, 1, 1)
+var testb5 = neighborOf (board, 1, 2)
+var testb6 = neighborOf (board, 2, 0)
+var testb7 = neighborOf (board, 2, 1)
+var testb8 = neighborOf (board, 2, 2)
