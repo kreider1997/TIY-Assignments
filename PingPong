@@ -1,3 +1,0 @@
-//watch PingPong, make sure PingPong is in JavaScript
-console.log('it should add "one" and "one": ',
-  add("one", "one") === 2);
