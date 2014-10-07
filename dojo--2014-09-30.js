@@ -13,7 +13,13 @@
  * ping-pong pairing, and commit often using `@username & @username` as the
  * commit message.
  */
+var wordsToNum = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
 
+function math(word) {
+  if (word == wordsToNum){
+    return wordsToNum[i];
+  }
+/*
 function wordsToNum(word) {
   if (word == "zero"){
     word = 0;
@@ -50,7 +56,7 @@ function wordsToNum(word) {
   }
   return word
 }
-
+*/
 function test_wordsToNum(a, b){
   console.log('it should convert "' + a + '" to ' + b + ': ', wordsToNum(a) === b);
 }
