@@ -6,7 +6,7 @@ var DEBUG = false;
 * Variable -
   * symbol:  DEBUG
   * value:  false
-* Operator - 
+* Operator -
   * name:  assignment
   * symbol:  =
   * operands: DEBUG
@@ -34,13 +34,43 @@ function debugLog() {
   * symbol:  ,
   * name:  assignment
   * symbol:  =
-  * name:  comparason 
+  * name:  comparason
   * symbol:  !
 * Keyword -
   * name:  conditional
   * symbol:  if
   * name:  output
   * symbol:  return
+
+```javascript
+      var scroll = function(timestamp) {
+        startTime = startTime || timestamp
+        var elapsed = timestamp - startTime
+        var progress = easeInOutCubic(elapsed, startPos, scrollEndValue, duration)
+        root.scrollTop = progress
+        elapsed < duration && requestAnimationFrame(scroll)
+      }
+```
+* Variable -
+  * name:  scroll
+  * name: elapsed
+  * name: progress
+* Operator -
+  * name:  assignment
+  * symbol: =
+  * name:  conditional
+  * symbol:  ()
+  * name:  block
+  * symbol:  {}
+  * name: logical
+  * symbol:  ||   &&
+  * name:  comparison
+  * symbol:  <
+  * name:  arithmetic
+  * symbol:  - 
+* Function -
+  * symbol:  timestamp
+* Identifier -
 
 
 ----
@@ -49,7 +79,7 @@ function debugLog() {
 ```javascript
   var links = document.querySelectorAll("a.scroll")
 ```
-*  Variable - 
+*  Variable -
    *       symbol:  links
    *       value:  `docuent.querySelectorAll`
 *  Operator -
@@ -64,8 +94,8 @@ function debugLog() {
 *  Keyword-
    *       name:  Variable Declaration
    *       symbol:  var
-*       
-  
+*
+
 ~~~
 
 ```javascript
@@ -77,12 +107,12 @@ var i = links.length
    *       name:  assignment
    *       symbol:  =
    *       operand:  i
-*  Type Literal - 
+*  Type Literal -
    *       name:  links
 *  Keyword -
    *       name:  Variable Declaration
    *       symbol:  var
-*       
+*
 
 ~~~
 
@@ -94,10 +124,10 @@ var i = links.length
 ```
 *  Variable -
    *       symbol:  easeInOutCubic
-*  Function - 
+*  Function -
    *       name:  t, b, c, d
 *  Operator -
-   *       name:  conditional 
+   *       name:  conditional
    *       symbol:  ()
 *  Operator -
    *       name:  block
@@ -105,7 +135,7 @@ var i = links.length
 *  Operator -
    *       name:  separator
    *       symbol:  ,
-*  Keyword - 
+*  Keyword -
    *       name:  Variable Declaration
    *       symbol:  var
 *  Keyword -
@@ -114,12 +144,7 @@ var i = links.length
 *  Keyword -
    *       name:  output
    *       symbol:  return
-*       
+*
 
-  
+
 ~~~
-
-
-
-
-
