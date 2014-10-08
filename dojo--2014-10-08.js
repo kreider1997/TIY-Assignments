@@ -16,59 +16,18 @@
 
 //  kreider1997 and fab9
 
-var assert = require(assert)
+var assert = require("assert")
 
-var words = {zero: 0, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10 };
+var words = { zero: 0, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10 };
+
 function fromEnglish(word){
     return words[word];
-    
-    if(word === 'zero') {
-        return words[word];
-    }
-    
-    if(word === 'one') {
-        return words[word];
-    }
-    
-    if(word === 'two') {
-        return words[word];
-    }
-    
-    if(word === 'three') {
-        return words[word];
-    }
-    
-    if(word === 'four') {
-        return words[word];
-    }
-    
-    if(word === 'five') {
-        return words[word];
-    }
-    
-    if(word === 'six') {
-        return words[word];
-    }
-   
-    if(word === 'seven') {
-        return words[word];
-    }
-    
-    if(word === 'eight') {
-        return words[word];
-    }
-    
-    if(word === 'nine') {
-        return words[word];
-    }
-    
-    if(word === 'ten') {
-        return words[word];
-    }
+  
 }
 
 describe('fromEnglish()', function() {
     it('should convert 0 through 10', function() {
+        assert(fromEnglish);
             assert.equal(fromEnglish('zero'), 0);
             assert.equal(fromEnglish('one'), 1);
             assert.equal(fromEnglish('two'), 2);
