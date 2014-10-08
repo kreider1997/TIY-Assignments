@@ -18,6 +18,14 @@
 
 var assert = require(assert)
 
+var words = {zero: 0, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10 };
+function fromEnglish(word){
+    return words[word];
+    
+   
+    
+}
+
 describe('fromEnglish()', function() {
     it('should convert 0 through 10', function() {
             assert.equal(fromEnglish('zero'), 0);
@@ -30,8 +38,6 @@ describe('fromEnglish()', function() {
             assert.equal(fromEnglish('seven'), 7);
             assert.equal(fromEnglish('eight'), 8);
             assert.equal(fromEnglish('nine'), 9);
-            assert.equal(fromEnglish('ten'), 10); {
-
-            })
+            assert.equal(fromEnglish('ten'), 10); 
     })
 })
