@@ -22,8 +22,49 @@ var words = {zero: 0, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven:
 function fromEnglish(word){
     return words[word];
     
-   
+    if(word === 'zero') {
+        return words[word];
+    }
     
+    if(word === 'one') {
+        return words[word];
+    }
+    
+    if(word === 'two') {
+        return words[word];
+    }
+    
+    if(word === 'three') {
+        return words[word];
+    }
+    
+    if(word === 'four') {
+        return words[word];
+    }
+    
+    if(word === 'five') {
+        return words[word];
+    }
+    
+    if(word === 'six') {
+        return words[word];
+    }
+   
+    if(word === 'seven') {
+        return words[word];
+    }
+    
+    if(word === 'eight') {
+        return words[word];
+    }
+    
+    if(word === 'nine') {
+        return words[word];
+    }
+    
+    if(word === 'ten') {
+        return words[word];
+    }
 }
 
 describe('fromEnglish()', function() {
