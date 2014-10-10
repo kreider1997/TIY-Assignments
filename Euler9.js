@@ -6,6 +6,7 @@
 //There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 //Find the product abc.
 
+var assert = require('assert');
 
 
 var pythagorean = function (a, b, c,){
@@ -17,3 +18,10 @@ var pythagorean = function (a, b, c,){
 
   }
 }
+
+
+describe ('pythagorean'(), function (){
+  it('should add a + b + c to equal 1000', funciton(){
+    assert.equal(pythgorean(), 1000);
+  });
+});
