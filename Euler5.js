@@ -12,9 +12,32 @@ var array19 = [];
 function solution (){
      
      return {
-        solveFor: function(){},  
-        getUpperLimit: function(){},
+        solveFor: function(limit){
+          getUpperLimit(limit);
+        },  
+        getUpperLimit: function(){
+          function getUpperLimit(limit){
+              var product=1;
+              for (var i=1; i<=limit; i++){
+                  product = product * i;
+              } 
+              return product;
+          }
+        },
         filterOdds: function(){},
+        
+          function filterOdds(a){
+              return a % 2 !== 0;
+              
+              var num = [ ]
+              for (value=10; value > 0; value--){
+               num.push (value);
+              }
+              
+              num.filter(filterOdds);
+              console.log (num);
+}
+
         findMultiples: function(){}
     }
 }
@@ -28,8 +51,11 @@ describe('solution()', function(){
     it('should be a type of function named solution()', function(){
         assert.typeOf(solution,'function');
     });
-    it('should contain function named solverFor()', function(){
-        assert.typeOf(solveFor,'function');
+    it('should return function named solveFor()', function(){
+        assert.typeOf(solution,'function');
+    });
+    it('should return function named getUpperLimit()', function(){
+        assert.typeOf(solution,'function');
     });
 });
 
