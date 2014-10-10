@@ -7,10 +7,16 @@ var expect = require('chai').expect;
 var should = require('chai').should();
 
 var array19 = [];
-//array19.fill(1++[start = 1 [end = 1000000]]);
 
-function smallestNum (){
-  
+
+function solution (){
+     
+     return {
+        solveFor: function(){},  
+        getUpperLimit: function(){},
+        filterOdds: function(){},
+        findMultiples: function(){}
+    }
 }
 
 
@@ -18,9 +24,12 @@ function smallestNum (){
 
 //   TESTING
 
-describe('smallestNum()', function(){
-    it('should be a type of function named smallestNum()', function(){
-        assert.typeOf(smallestNum,'function');
+describe('solution()', function(){
+    it('should be a type of function named solution()', function(){
+        assert.typeOf(solution,'function');
+    });
+    it('should contain function named solverFor()', function(){
+        assert.typeOf(solveFor,'function');
     });
 });
 
@@ -30,9 +39,9 @@ describe('smallestNum()', function(){
 /*
 var eulerFive = function(){
   for (var i=0; i<=10000000; i++){
-    for (var num = 1; num<= 20; num++){
+    for (var num = 20; num>= 1; num--){
       if (num % == 0){
-        return num;
+        return i;
       }
     }
   }
