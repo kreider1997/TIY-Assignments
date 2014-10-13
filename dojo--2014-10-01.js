@@ -36,8 +36,7 @@ return {
 
     if (dollars < 20) {
       return ones[dollars] + checkEnd;
-    }
-    if (dollars < 100) {
+    } else if (dollars < 100) {
       if (dollars % 10 === 0) {
         return tens[dollars[0]] + checkEnd;
       } else {
@@ -65,13 +64,24 @@ return {
         return ones[dollars[0]] + thousands + " " + ones[dollars[1]] + hundreds + checkEnd;
       }
       else if (dollars % 10 === 0) {
-        return
+        return ones[dollars[0]] + thousands + " " + ones[dollars[1]] + hundreds + " " + tens[dollars[2]] + checkEnd;
+      }
+      else if (dollars [2] < 2) {
+        return ones[dollars[0]] + thousands + " " + ones[dollars[1]] + hundreds + " " + teens[dollars[3]] + checkEnd;
+      } else {
+        return ones[dollars[0]] + thousands + " " + ones[dollars[1]] + hundreds + " " + tens[dollars[2]] + " " + ones[dollars[3]] + checkEnd;
       }
     }
   }
 }
 
+var assert = require('chai').assert;
+describe('checkWriting().toEnglish()', function() {
+  if ('should convert "0" to "zero"', function(){
+    assert.equal(checkWriting().toEnglish(0), 'zero 00/100 Dollars');
+  });
 
+})
 
 /*  old code below
 
