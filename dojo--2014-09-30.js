@@ -38,6 +38,15 @@ var stringCalc = {
   }
 }
 
+//this is BBD - behavior driven
+//describe ("wordsToNum(), will convert two written numbers to numberals and return the sum", funtion(){
+//  it ("should return "0" when given "zero" and "zero", funtion (){
+//    assert.equal(0, stringCalc.wordsToNum("zero", "zero"));
+//  });
+//})
+
+//this is TDD - test driven
+
 suite("wordsToNum(), will convert two written numbers to numerals and return the sum", function() {
   test('Should return "0" when given "zero" and "zero"', function (){
     assert.equal(0, stringCalc.wordsToNum("zero", "zero"));
