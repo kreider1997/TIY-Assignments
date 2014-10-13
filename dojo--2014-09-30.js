@@ -45,7 +45,12 @@ suite("wordsToNum(), will convert two written numbers to numerals and return the
   test('should return a number when given a word', function(){
     assert.typeof(stringCalc.wordsToNum("zero", "zero"), 'number');
   })
-
+  test('should return "3" when given "one" and "two"', function(){
+    assert.equal(3, stringCalc.wordsToNum("one", "two"));
+  })
+  test('should return "4" when given "two and two"', function(){
+    assert.equal(4, stringCalc.wordsToNum("two", "two"));
+  })
 })
 
 
