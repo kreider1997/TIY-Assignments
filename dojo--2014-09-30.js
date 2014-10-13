@@ -14,6 +14,42 @@
  * commit message.
  */
 
+ // using a lot of code input from Ari
+
+var assert = require ('chai').assert;
+
+var num = {
+  "zero" : 0,
+  "one" : 1,
+  "two" : 2,
+  "three" : 3,
+  "four" : 4,
+  "five" : 5,
+  "six" : 6,
+  "seven" : 7,
+  "eight" : 8,
+  "nine" : 9,
+  "ten" : 10,
+}
+
+var stringCalc = {
+  wordsToNum : function(wordA, wordB){
+    return num[wordA] + num [wordB];
+  }
+}
+
+suite("wordsToNum(), will convert two written numbers to numerals and return the sum", function() {
+  test('Should return "0" when given "zero" and "zero"', function (){
+    assert.equal(0, stringCalc.wordsToNum("zero", "zero"));
+  })
+  test('should return a number when given a word', function(){
+    assert.typeof(stringCalc.wordsToNum("zero", "zero"), 'number');
+  })
+
+})
+
+
+/* Old code below----
 var add = function(a, b){
   if (a === "five" && b === "four"){
     return 9
@@ -59,3 +95,4 @@ console.log('it should add "four" and "four"; ',
   add("four", "four") === 8);
 console.log('it should add "five" and "four"; ',
   add("five", "four") === 9);
+*/

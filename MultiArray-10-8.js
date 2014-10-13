@@ -1,4 +1,6 @@
 // Multidimensional array example.  Website:  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Example:_Creating_a_two-dimensional_array
+var assert = require('assert');
+//caps are black, lower case is white
 var board = [
   ['R','N','B','Q','K','B','N','R'],
   ['P','P','P','P','P','P','P','P'],
@@ -11,7 +13,52 @@ var board = [
 ];
 console.log(board.join('\n') + '\n\n');
 
-// move kings pawn forward 2
-board [4][4] = board [6][4];
-board [6][4] = ' ';
-console.log(board.join('\n'));
+// move white queen pawn forward to d4.
+board [4][3] = board [6][3];
+board [6][3] = ' ';
+console.log(board.join('\n') + '\n\n');
+
+//move black queen pawn forward to d5.
+board [3][3] = board [1][3];
+board [1][3] = ' ';
+console.log(board.join('\n') + '\n\n');
+
+//move white bishion pawn forward to c4.
+board [4][2] = board [6][2];
+board [6][2] = ' ';
+console.log(board.join('\n') + '\n\n');
+
+//move black kink pawn forward to e6.
+board [2][4] = board [1][4];
+board [1][4] = ' ';
+console.log(board.join('\n') + '\n\n');
+
+//move white king's knight forward to f3.
+board [5][5] = board [7][6];
+board [7][6] = ' ';
+console.log(board.join('\n') + '\n\n');
+
+//move black king's knight forward to f6.
+board [2][5] = board [0][6];
+board [0][6] = ' ';
+console.log(board.join('\n') + '\n\n');
+
+//move white pawn forward to g3.
+board [5][6] = board [6][6];
+board [6][6] = ' ';
+console.log (board.join('\n') + '\n\n');
+
+//move black kings bishop to e7
+board [1][4] = board [0][6];
+board [0][6] = ' ';
+console.log(board.join('\n') + '\n\n');
+
+//move white king's bishop to g2.
+board [6][6] = board [7][5];
+board [7][5] = ' ';
+console.log(board.join('\n') + '\n\n');
+
+// Test code -- hummmmmm......
+//function test(actual, expected){
+//  assert.strictEqual(actual, expected);
+//}
