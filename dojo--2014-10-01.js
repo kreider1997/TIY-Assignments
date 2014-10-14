@@ -24,7 +24,7 @@
 function checkWriting(){
 var ones = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
 var tens = ["zero", "ten", "twenty", "thirty", "fourty", "fifty", "sixty", "seventy", "eighty", "ninety"]
-var teens = ["zero", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventee", "eighteen", "nineteen"]
+var teens = ["zero", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
 var hundreds = " hundred"
 var thousands = " thousand"
 
@@ -80,7 +80,12 @@ describe('checkWriting().toEnglish()', function() {
   if ('should convert "0" to "zero"', function(){
     assert.equal(checkWriting().toEnglish(0), 'zero 00/100 Dollars');
   });
-
+it ('should convert "20" to "twenty"', function(){
+  assert.equal(checkWriting().toEnglish(20), 'twenty four 00/100 Dollars');
+});
+it ('should convert "25 to "twenty five"', function(){
+  assert.equal(checkWriting().toEnglish(25), 'twenty five 00/100 Dollars');
+});
 })
 
 /*  old code below
