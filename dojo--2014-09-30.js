@@ -13,36 +13,76 @@
  * ping-pong pairing, and commit often using `@username & @username` as the
  * commit message.
  */
+var wordsToNum = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
 
-var add = function(a, b){
-  if (a === "five" && b === "four"){
-    return 9
+function math(word) {
+  if (word == wordsToNum){
+    return wordsToNum[i];
   }
-  if (a === "three" && b === "three"){
-  return 6
-    }
-  if (a === "two" && b === "three"){
-    return 5
+/*
+function wordsToNum(word) {
+  if (word == "zero"){
+    word = 0;
   }
-
-if ( a === "two"){
-  return 4
+  if (word == "one"){
+    word = 1;
+  }
+  if (word == "two"){
+    word = 2;
+  }
+  if (word == "three"){
+    word = 3;
+  }
+  if (word == "four"){
+    word = 4;
+  }
+  if (word == "five"){
+    word = 5;
+  }
+  if (word == "six"){
+    word = 6;
+  }
+  if (word == "seven"){
+    word = 7;
+  }
+  if (word == "eight"){
+    word = 8;
+  }
+  if (word == "nine"){
+    word = 9;
+  }
+  if (word == "ten"){
+    word = 10;
+  }
+  return word
+}
+*/
+function test_wordsToNum(a, b){
+  console.log('it should convert "' + a + '" to ' + b + ': ', wordsToNum(a) === b);
 }
 
-  if ( b === "two" ){
-      return 3
-   }
-  if ( b === "four"){
-      return 8
-    }
-    if ( a === "four" ){
-      return 7
-    }
-      return 2
-}
+console.log(add("three", "eight"))
+
+test_add("zero", "five", 5)
+test_add("seven", "three", 10)
+test_add("nine", "five", 14)
+test_add("six", "eight", 14)
+test_add("one", "one", 2)
+test_add("seven", "two", 9)
+test_add("five", "eight", 13)
+test_add("three", "four", 7)
+
+console.log(add("one", "one") === 2)
+console.log(add("one", "two") === 3)
+console.log(add("one", "three") === 4)
+console.log(add("one", "four") === 5)
+console.log(add("one", "five") === 6)
+console.log(add("one", "six") === 7)
+console.log(add("one", "seven") === 8)
+console.log(add("eight", "three") === 11)
 
 
-
+/*
 console.log('it should add "one" and "one": ',
   add("one", "one") === 2);
 console.log('it should add "one" and "two": ',
@@ -59,3 +99,4 @@ console.log('it should add "four" and "four"; ',
   add("four", "four") === 8);
 console.log('it should add "five" and "four"; ',
   add("five", "four") === 9);
+*/

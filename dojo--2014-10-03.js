@@ -261,7 +261,7 @@ var newCell;
 function conway (cell, neighbors) {
   var livingCell = 0;
   for (var i=0; i<neighbors.length; i++){ //you are telling the robot to cycle through the board
-      if neighbors[i] == true)
+      if neighbors[i] == true){
         livingCell++;
       }
       if cell === true{
@@ -275,10 +275,13 @@ function conway (cell, neighbors) {
           newCell = false;
         }
       } else {
+        if (alive === 3){
+          newCell = true
+        } else {
         newCell = false;
         }
       }
-      return newCell
+      return newCell;
 }
 
 */
