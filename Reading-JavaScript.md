@@ -40,12 +40,12 @@ var i = links.length
 
 ```javascript
   var easeInOutCubic = function(t, b, c, d) {
-    if ((t/=d/2) < 1) return c/2*t*t*t + b
-    return c/2*((t-=2)*t*t + 2) + b
-  }
 ```
 *  Variable -
    *       symbol:  easeInOutCubic
+*  Operator -
+   *       name:  assignment
+   *       symbol:  =
 *  Function -
    *       name:  t, b, c, d
 *  Operator -
@@ -60,20 +60,40 @@ var i = links.length
 *  Keyword -
    *       name:  Variable Declaration
    *       symbol:  var
+
+```javascript
+    if ((t/=d/2) < 1) return c/2*t*t*t + b
+```
 *  Keyword -
    *       name:  conditional
    *       symbol:  if
+*  Operator -
+   *       name:  conditional
+   *       symbol:  ()
 *  Keyword -
    *       name:  output
    *       symbol:  return
-*
+
+
+```javascript
+    return c/2*((t-=2)*t*t + 2) + b  }
+```
+*  Keyword -
+   *       name:  output
+   *       symbol:  return
+*  Operator -
+   *       name:  block
+   *       symbol:  {}
+*  Operator -
+   *       name:  conditional
+   *       symbol:  ()
 
 
 ~~~
 
 
 ----
-###Items below done in third week.
+
 ```javascript
 var DEBUG = false;
 ```
@@ -90,41 +110,78 @@ var DEBUG = false;
 
 ```javascript
 function debugLog() {
-  var i, log = '';
-  if (!DEBUG) {
-    return;
-  }
 ```
 * Function -
   * symbol:  debugLog
+* Operator -  
+  * name:  block
+  * symbol: {}
+  * name:  conditional
+  * symbol:  ()
+
+```javascript
+  var i, log = '';
+```
+
 * Variable -
   * name: i
 * Operator -
-  * name:  conditional
-  * symbol:  ()
-  * name:  block
-  * symbol: {}
-  * name:  separator
-  * symbol:  ,
   * name:  assignment
   * symbol:  =
-  * name:  comparason
-  * symbol:  !
+  * name:  separator
+  * symbol:  ,
+
+
+```javascript
+  if (!DEBUG) {
+```
 * Keyword -
   * name:  conditional
   * symbol:  if
+* Operator -  
+  * name:  block
+  * symbol: {}
+* Operator -
+  * name:  conditional
+  * symbol:  ()
+  * name:  comparison
+  * symbol:  !
+
+```javascript
+    return;  }
+```
+* Operator -
+  * name:  block
+  * symbol: {}
+* Keyword -
   * name:  output
   * symbol:  return
 
+
 ```javascript
       var scroll = function(timestamp) {
-        startTime = startTime || timestamp
-        var elapsed = timestamp - startTime
-        var progress = easeInOutCubic(elapsed, startPos, scrollEndValue, duration)
-        root.scrollTop = progress
-        elapsed < duration && requestAnimationFrame(scroll)
-      }
 ```
+
+```javascript
+        startTime = startTime || timestamp
+```
+
+```javascript
+        var elapsed = timestamp - startTime
+```
+
+```javascript
+        var progress = easeInOutCubic(elapsed, startPos, scrollEndValue, duration)
+```
+
+```javascript
+        root.scrollTop = progress
+```
+
+```javascript
+        elapsed < duration && requestAnimationFrame(scroll)   }
+```
+
 * Variable -
   * name:  scroll
   * name: elapsed
@@ -147,8 +204,6 @@ function debugLog() {
 * Identifier -
 
 
-----
-### Items below done in second week.
 
 ```javascript
   var links = document.querySelectorAll("a.scroll")
@@ -192,9 +247,6 @@ var i = links.length
 
 ```javascript
   var easeInOutCubic = function(t, b, c, d) {
-    if ((t/=d/2) < 1) return c/2*t*t*t + b
-    return c/2*((t-=2)*t*t + 2) + b
-  }
 ```
 *  Variable -
    *       symbol:  easeInOutCubic
@@ -212,9 +264,19 @@ var i = links.length
 *  Keyword -
    *       name:  Variable Declaration
    *       symbol:  var
+
+```javascript
+    if ((t/=d/2) < 1) return c/2*t*t*t + b
+```
+
 *  Keyword -
    *       name:  conditional
    *       symbol:  if
+
+```javascript
+    return c/2*((t-=2)*t*t + 2) + b }
+```
+
 *  Keyword -
    *       name:  output
    *       symbol:  return
