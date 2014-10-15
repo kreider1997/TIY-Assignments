@@ -1,7 +1,55 @@
+----
+###Items below done in third week.
+```javascript
+var DEBUG = false;
+```
+* Variable -
+  * symbol:  DEBUG
+  * value:  false
+* Operator - 
+  * name:  assignment
+  * symbol:  =
+  * operands: DEBUG
+* Type Litteral -
+  * name:  false
+
+
+```javascript
+function debugLog() {
+  var i, log = '';
+  if (!DEBUG) {
+    return;
+  }
+```
+* Function -
+  * symbol:  debugLog
+* Variable -
+  * name: i
+* Operator -
+  * name:  conditional
+  * symbol:  ()
+  * name:  block
+  * symbol: {}
+  * name:  separator
+  * symbol:  ,
+  * name:  assignment
+  * symbol:  =
+  * name:  comparason 
+  * symbol:  !
+* Keyword -
+  * name:  conditional
+  * symbol:  if
+  * name:  output
+  * symbol:  return
+
+
+----
+### Items below done in second week.
+
 ```javascript
   var links = document.querySelectorAll("a.scroll")
 ```
-*  variable - 
+*  Variable - 
    *       symbol:  links
    *       value:  `docuent.querySelectorAll`
 *  Operator -
