@@ -45,8 +45,8 @@ var moves = {
     board[6][6] = ' ';
   },
   step 8: function(){
-    board[1][4] = board[0][6];
-    board[0][6] = ' ';
+    board[1][4] = board[0][5];
+    board[0][5] = ' ';
   },
   step 9: function(){
     board[6][6] = board[7][5];
@@ -102,9 +102,9 @@ console.log(board.join('\n') + '\n\n');
 // Test code
 
 describe ('testing the board state', function(){
+
   it('after move 1: board should look like', function(){
     moves.step1();
-
     assert.deepEqual(board,
       [
       ['R','N','B','Q','K','B','N','R'],
@@ -117,9 +117,9 @@ describe ('testing the board state', function(){
       ['r','n','b','q','k','b','n','r'] ]
     )
   });
+
   it('after move 2: board should look like', function(){
     moves.step2();
-
     assert.deepEqual(board,
       [
       ['R','N','B','Q','K','B','N','R'],
@@ -132,20 +132,99 @@ describe ('testing the board state', function(){
       ['r','n','b','q','k','b','n','r'] ]
     )
   });
+
   it('after move 3: board should look like', function(){
     moves.step3();
-
     assert.deepEqual(board,
-    [
-    ['R','N','B','Q','K','B','N','R'],
-    ['P','P','P',' ','P','P','P','P'],
-    [' ',' ',' ',' ',' ',' ',' ',' '],
-    [' ',' ',' ','P',' ',' ',' ',' '],
-    [' ',' ','p','p',' ',' ',' ',' '],
-    [' ',' ',' ',' ',' ',' ',' ',' '],
-    ['p','p',' ',' ','p','p','p','p'],
-    ['r','n','b','q','k','b','n','r'] ]
-    )
+      [
+      ['R','N','B','Q','K','B','N','R'],
+      ['P','P','P',' ','P','P','P','P'],
+      [' ',' ',' ',' ',' ',' ',' ',' '],
+      [' ',' ',' ','P',' ',' ',' ',' '],
+      [' ',' ','p','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ',' ',' ',' '],
+      ['p','p',' ',' ','p','p','p','p'],
+      ['r','n','b','q','k','b','n','r'] ]
+      )
   });
-  it
-})
+
+  it('after move 4: board should look like', function(){
+    moves.step3();
+    assert.deepEqual(board,
+      [
+      ['R','N','B','Q','K','B','N','R'],
+      ['P','P','P',' ',' ','P','P','P'],
+      [' ',' ',' ',' ','P',' ',' ',' '],
+      [' ',' ',' ','P',' ',' ',' ',' '],
+      [' ',' ','p','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ',' ',' ',' '],
+      ['p','p',' ',' ','p','p','p','p'],
+      ['r','n','b','q','k','b','n','r'] ]
+      )
+  });
+
+  it('after move 5: board should look like', function(){
+      [
+      ['R','N','B','Q','K','B','N','R'],
+      ['P','P','P',' ',' ','P','P','P'],
+      [' ',' ',' ',' ','P',' ',' ',' '],
+      [' ',' ',' ','P',' ',' ',' ',' '],
+      [' ',' ','p','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ','n',' ',' '],
+      ['p','p',' ',' ','p','p','p','p'],
+      ['r','n','b','q','k','b',' ','r'] ]
+      )
+  });
+
+  it('after move 6: board should look like', function(){
+      [
+      ['R','N','B','Q','K','B','N','R'],
+      ['P','P','P',' ',' ','P','P','P'],
+      [' ',' ',' ',' ','P','N',' ',' '],
+      [' ',' ',' ','P',' ',' ',' ',' '],
+      [' ',' ','p','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ','n',' ',' '],
+      ['p','p',' ',' ','p','p','p','p'],
+      ['r','n','b','q','k','b',' ','r'] ]
+      )
+  });
+
+  it('after move 7: board should look like', function(){
+      [
+      ['R','N','B','Q','K','B','N','R'],
+      ['P','P','P',' ',' ','P','P','P'],
+      [' ',' ',' ',' ','P','N',' ',' '],
+      [' ',' ',' ','P',' ',' ',' ',' '],
+      [' ',' ','p','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ','n','p',' '],
+      ['p','p',' ',' ','p','p',' ','p'],
+      ['r','n','b','q','k','b',' ','r'] ]
+      )
+  });
+
+  it('after move 8: board should look like', function(){
+      [
+      ['R','N','B','Q','K',' ','N','R'],
+      ['P','P','P',' ','B','P','P','P'],
+      [' ',' ',' ',' ','P','N',' ',' '],
+      [' ',' ',' ','P',' ',' ',' ',' '],
+      [' ',' ','p','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ','n','p',' '],
+      ['p','p',' ',' ','p','p',' ','p'],
+      ['r','n','b','q','k','b',' ','r'] ]
+      )
+  });
+
+  it('after move 9: board should look like', function(){
+      [
+      ['R','N','B','Q','K',' ','N','R'],
+      ['P','P','P',' ','B','P','P','P'],
+      [' ',' ',' ',' ','P','N',' ',' '],
+      [' ',' ',' ','P',' ',' ',' ',' '],
+      [' ',' ','p','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ','n','p',' '],
+      ['p','p',' ',' ','p','p','b','p'],
+      ['r','n','b','q','k',' ',' ','r'] ]
+      )
+  });
+});
