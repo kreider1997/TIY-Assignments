@@ -50,3 +50,38 @@
   }
 
   //sum (arrEvens);
+
+  describe ('Project Euler No. 2', funciton (){
+    var S; //or var S = solution ();
+    beforeEach(function(){
+      S = solution();
+    });
+
+    describe('fibonacci sequence', funciton (){
+      it('should have a function for doing this', function (){
+        assert.isFunction(S.fibonacci);
+        assert.deepEqual(S.fibonacci(0), [ ]);
+
+      });
+      it ('should calculate fibonacci numbers for a small sample', function(){
+        assert.deepEqual(S.fibonacci(3), [1, 2]);
+        assert.deepEqual(S.fibonacci(5), [1, 2, 3]);
+        assert.deepEqual(S.fibonacci(10), [1, 2, 3, 5, 8]);
+        assert.deepEqual(S.fibonacci(20), [1, 2, 3, 5, 8, 13]);
+      });
+    });
+
+    describe('sum values in a list', function(){
+      it('should have a function for doing this', function(){
+        assert.isFunction(S.filterEvens);
+      });
+      it('should filter our evens', function(){
+        assert.deepEqual(S.filterEvens([ 1 ]), [ ]);
+        assert.deepEqual(S.filterEvens([ 2 ]), [ 2 ]);
+        assert.deepEqual(S.filterEvens([ 1, 2 ]), [ 2 ]);
+        assert.deepEqual(S.filterEvens([ 1, 2, 3 ]), [ 2 ]);
+      });
+    });
+
+    
+  })
