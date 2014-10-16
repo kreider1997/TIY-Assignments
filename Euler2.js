@@ -14,6 +14,39 @@
       solveFor: function(limit){
         return 0;
       },
-      
+      /**
+       *@param Number limit
+       *@return Array of Number in fibonacci sequence up to limit
+       */
+       fibonacci: function(limit){
+         var prev = 1, curr = 2, temp;
+         var sequence = [ 1, 2 ];
+
+         //check for minimum sequence
+         if (limit<3) {
+           return [ ];
+         }
+         while ( prev + curr < limit ){
+           temp = prev + curr;
+           prev = curr;
+           curr = temp;
+           sequence.push(temp);
+         }
+         return sequence;
+       }
+       filterEvens; fuction (list){
+         return list.filter (function(){
+           return (item % 2 === 0);
+         });
+       }
+       sum: function (list){
+         var total = 0
+         arr.forEach(function(element){
+           total+=element;
+         });
+         return total;
+       }
     }
   }
+
+  //sum (arrEvens);
