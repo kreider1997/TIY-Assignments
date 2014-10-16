@@ -83,5 +83,32 @@
       });
     });
 
-    
-  })
+    describe('sum values in a list', function(){
+      it('should have a function for doing this', function(){
+        assert.isFunction(S.sum);
+        assert.equal(S.sum([ ]), 0);
+      });
+      it('should sum items', function(){
+        assert.equal(S.sum([ 1 ]), 1);
+        assert.equal(S.sum([ 2 ]), 2);
+        assert.equal(S.sum([ 1, 1 ]), 2);
+        assert.equal(S.sum([ 1, 2 ]), 3);
+        assert.equal(S.sum([ 3, 1, 4 ]), 8);
+      });
+    });
+
+    describe('solveFor', function(){
+      it('should have a function for doing this', funciton(){
+        assert.isFunction(S.solveFor);
+      });
+      it('should be able to solve simple examples', function(){
+        assert.equal(S.solveFor(0), 0);
+        assert.equal(S.solveFor(3), 2);  //fail
+      });
+    });
+  });
+
+//console.log(arrEvens);
+//fibonacci: function(limit) { /*. . . */ },
+//filterEvens: function(list) { /* . . . */ },
+//sum:  function(list) { /* . . . */ }
