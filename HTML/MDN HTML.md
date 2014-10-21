@@ -14,7 +14,7 @@ Document division
 
 `<footer>`
 * Section of page footer
-The HTML <footer> Element represents a footer for its nearest sectioning content or sectioning root element (i.e, its nearest parent <article>, <aside>, <nav>, <section>, <blockquote>, <body>, <details>, <fieldset>, <figure>, <td>). A footer typically contains information about the author of the section, copyright data or links to related documents.
+The HTML <footer> Element represents a footer for its nearest sectioning content or sectioning root element (i.e, its nearest parent `<article>, <aside>, <nav>, <section>, <blockquote>, <body>, <details>, <fieldset>, <figure>, <td>`). A footer typically contains information about the author of the section, copyright data or links to related documents.
   * examples:
     * url: http://orlando.theironyard.com/
 ```
