@@ -103,7 +103,7 @@ The HTML `<header>` Element represents a group of introductory or navigational a
     <header style="background-image:url(http://static.tumblr.com/3c7cd96cde56779343d2e9a22afec085/w5gxxfv/oCrn8vkw8/tumblr_static_9cxjqqnfamsccsg4ow84sg8kg.jpg);"></header>
 ```
 
-  * url:  http://blog.theironyard.com/
+  * url: http://blog.theironyard.com/
 ```html
     <header style="background-image:url(http://static.tumblr.com/6ead77da4bf66eddf3998acad57b975e/w5gxxfv/w3Sn9hotu/tumblr_static_1nxex1e3d5y8cc40o4cccoc0w.jpg);"></header>
 ```
