@@ -25,7 +25,7 @@ This is a fourth <length> value. Positive values will cause the shadow to expand
 See <color> values for possible keywords and notations.
 If not specified, the color used depends on the browser - it is usually the value of the color property, but note that Safari currently paints a transparent shadow in this case.
 
-**border-bottom-color88
+**border-bottom-color**
 The border-bottom-color CSS property sets the color of the bottom border of an element. Note that in many cases the shorthand CSS properties border-color or border-bottom are more convenient and preferable.
 Values -
 <color>
@@ -49,4 +49,52 @@ Is a <color> CSS value describing the color of the right border.
 inherit
 Is a keyword denoting the color of the bottom border of the parent's element (which may be different from the border-right-color default value)
 
-**
+**border-top-color**
+The border-top-color CSS property sets the color of the top border of an element. Note that in many cases the shorthand CSS properties border-color or border-top are more convenient and preferable.
+Values -
+<color>
+Is a <color> CSS value describing the color of the top border.
+inherit
+Is a keyword denoting the color of the top border of the parent's element (which may be different from the border-top-color default value)
+
+**color**
+The CSS color property sets the foreground color of an element's text content, and its decorations. It doesn't affect any other characteristic of the element; it should really be called text-color and would have been named so, save for historical reasons and its appearance in CSS Level 1.
+
+Note that the color value must be a uniform color, which may include a transparency value from CSS3 onwards. It can't be a <gradient> which is an <image> in CSS.
+Values -
+<color>
+Is a <color> value giving the color of the textual elements of the element.
+
+**column-rule-color**
+The column-rule-color CSS property lets you set the color of the rule drawn between columns in multi-column layouts.
+Values -
+<color>
+Is a <color> value representing the color of the rule separating columns.
+
+**filter**
+**EXPERIMENTAL**
+The CSS filter property provides for effects like blurring or color shifting on an element’s rendering before the element is displayed. Filters are commonly used to adjust the rendering of an image, a background, or a border.
+
+Included in the CSS standard are several functions that achieve predefined effects. You can also reference a filter specified in SVG with a URL to an SVG filter element.
+
+**list-style-image**
+The list-style-image CSS property sets the image that will be used as the list item marker.
+
+It is often more convenient to use the shorthand list-style.
+Values -
+<uri>
+Location of image to use as the marker.
+none
+Specifies that no image is used as the marker. If this value is set, the marker defined in list-style-type will be used instead.
+
+**outline-color**
+The outline-color CSS property sets the color of the outline of an element. An outline is a line that is drawn around elements, outside the border edge, to make the element stand out.
+Values -
+<color>
+See <color> for the various color keywords and notations.
+invert
+To ensure the outline is visible, performs a color inversion of the background. This makes the focus border more salient, regardless of the color in the background. Note that browsers are not required to support it. If not, they just consider the statement as invalid
+
+**text-decoration-color**
+The text-decoration-color CSS property sets the color used when drawing underlines, overlines, or strike-throughs specified by text-decoration-line. This is the preferred way to color these text decorations, rather than using combinations of other HTML elements.
+Values -
