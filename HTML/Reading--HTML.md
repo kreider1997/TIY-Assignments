@@ -1,4 +1,100 @@
 ##HTML reference on MDN
+
+####assignment 18 additions
+`<head>`
+Represents a collection of metadata about the document, including links to, or definitions of, scripts and style sheets.
+* The HTML Head Element (`<head>`) provides general information (metadata) about the document, including its title and links to or definitions of scripts and style sheets
+*examples:
+  * url:  
+```html
+
+```  
+
+`<title>`
+Defines the title of the document, shown in a browser's title bar or on the page's tab. It can only contain text and any contained tags are not interpreted.
+* The HTML `<title>` element (HTML Title Element) defines the title of the document, shown in a browser's title bar or on the page's tab. It can only contain text and any contained tags are not interpreted.
+*examples:
+  * url:  
+```html
+
+```
+
+`<base>`
+Defines the base URL for relative URLs in the page.
+* The HTML Base Element (`<base>`) specifies the base URL to use for all relative URLs contained within a document.There is maximum one `<base>` element in a document.
+*examples:
+  * url:  
+```html
+
+```
+
+`<link>`
+Used to link JavaScript and external CSS with the current HTML document.
+* The HTML Link Element (`<link>`) specifies relationships between the current document and an external resource. Possible uses for this element include defining a relational framework for navigation. This Element is most used to link to style sheets.
+*examples:
+  * url:  
+```html
+
+```
+
+`<style>`
+Used to write inline CSS.
+* The HTML `<style>` element contains style information for a document, or a part of document. The specific style information is contained inside of this element, usually in the CSS.
+*examples:
+  * url:  
+```html
+
+```
+
+`<script>`
+Defines either an internal script or a link to an external script. The script language is JavaScript.
+* The HTML `<script>` element is used to embed or reference an executable script within an HTML or XHTML document.
+
+Scripts without async or defer attributes, as well as inline scripts, are fetched and executed immediately, before the browser continues to parse the page.
+*examples:
+  * url:  
+```html
+
+```
+
+`<noscript>`
+Defines alternative content to display when the browser doesn't support scripting.
+*The HTML `<noscript>` Element defines a section of html to be inserted if a script type on the page is unsupported or if scripting is currently turned off in the browser.
+*examples:
+  * url:  
+```html
+
+```
+
+`<template>`
+Container for client-side content instantiated during runtime using JavaScript.
+*The HTML template element `<template>` is a mechanism for holding client-side content that is not to be rendered when a page is loaded but may subsequently be instantiated during runtime using JavaScript. Think of a template as a content fragment that is being stored for subsequent use in the document. The parser does process the content of the `<template>` element during the page load to ensure that it is valid, however.
+*examples:
+  * url:  
+```html
+
+```
+
+`<body>`
+Represents the content of an HTML document. There is only one `<body>` element in a document.
+* The HTML `<body>` element represents the content of an HTML document. There is only one `<body>` element in a document.
+*examples:
+  * url:  
+```html
+
+```
+
+`<nav>`
+Defines a section that contains only navigation links.
+* The HTML Navigation Element (<nav>) represents a section of a page that links to other pages or to parts within the page: a section with navigation links.
+*examples:
+  * url:  
+```html
+
+```
+
+
+
 ####Block-level elements
 
 `<div>`
