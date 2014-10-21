@@ -7,9 +7,9 @@ Document division
 * examples:
   * url: http://orlando.theironyard.com/
 ```
-    * <div class="has-avatar content" id="posts">
-    * <div class="posts-wrap">
-    * <article class="post type-text" id="100189034319"><div class="clearfix rte">
+    <div class="has-avatar content" id="posts">
+    <div class="posts-wrap">
+    <article class="post type-text" id="100189034319"><div class="clearfix rte">
 ```
 
 `<footer>`
@@ -18,7 +18,7 @@ The HTML <footer> Element represents a footer for its nearest sectioning content
   * examples:
     * url: http://orlando.theironyard.com/
 ```
-      * <footer>
+      <footer>
     <div class="footer-wrap content-wrap clearfix">
       <aside class="sidebar">
         <div class="avatar-wrap">
@@ -36,15 +36,16 @@ The HTML <footer> Element represents a footer for its nearest sectioning content
     </div>
   </footer><script src="http://static.tumblr.com/ymcvd4r/Raan0lekb/script.js" type="text/javascript"></script>
 ```
+
     * url:http://blog.theironyard.com/
 ```
-      * <footer>
+    <footer>
     <div class="footer-wrap content-wrap clearfix">
 ```
 
     * url:  http://www.usatoday.com/
 ```
-      * <footer class="site-footer clearfix">
+    <footer class="site-footer clearfix">
 ```
 
 `<form>`
@@ -53,16 +54,17 @@ The HTML <form> element represents a document section that contains interactive 
   * examples:
     * url: http://orlando.theironyard.com/
 ```
-      * </div><form action="/search" class="module search-form" method="get">
+      </div><form action="/search" class="module search-form" method="get">
         <h2>Search</h2>
         <div class="input-wrap">
-      * <form>
+      <form>
               <input type="text" id="st-search-input" class="search-field" />
             </form>
 ```
+
     * url: http://blog.theironyard.com/
 ```
-      * <form>
+      <form>
               <input type="text" id="st-search-input" class="search-field" />
             </form>
 ```
@@ -98,15 +100,17 @@ The HTML <header> Element represents a group of introductory or navigational aid
 * examples:
   * url: http://orlando.theironyard.com/
 ```
-    * <header style="background-image:url(http://static.tumblr.com/3c7cd96cde56779343d2e9a22afec085/w5gxxfv/oCrn8vkw8/tumblr_static_9cxjqqnfamsccsg4ow84sg8kg.jpg);"></header>
+    <header style="background-image:url(http://static.tumblr.com/3c7cd96cde56779343d2e9a22afec085/w5gxxfv/oCrn8vkw8/tumblr_static_9cxjqqnfamsccsg4ow84sg8kg.jpg);"></header>
 ```
+
   * url:  http://blog.theironyard.com/
 ```
-    * <header style="background-image:url(http://static.tumblr.com/6ead77da4bf66eddf3998acad57b975e/w5gxxfv/w3Sn9hotu/tumblr_static_1nxex1e3d5y8cc40o4cccoc0w.jpg);"></header>
+    <header style="background-image:url(http://static.tumblr.com/6ead77da4bf66eddf3998acad57b975e/w5gxxfv/w3Sn9hotu/tumblr_static_1nxex1e3d5y8cc40o4cccoc0w.jpg);"></header>
 ```
+
   * url:  http://www.usatoday.com/
 ```
-    * <header data-default-fixed="false" data-default-open="true" class=" site-header ">
+    <header data-default-fixed="false" data-default-open="true" class=" site-header ">
 ```
 
 `<p>`
@@ -115,9 +119,9 @@ The HTML <p> element (or HTML Paragraph Element) represents a paragraph of text.
 * examples:
   * url: http://orlando.theironyard.com/
 ```
-  * <p>You can find more information on our Meetup page: </p>
-  * <p><a href="http://www.meetup.com/The-Iron-Yard-Orlando/">http://www.meetup.com/The-Iron-Yard-Orlando/</a></p>
-  * <p>See you then!</p>
+  <p>You can find more information on our Meetup page: </p>
+  <p><a href="http://www.meetup.com/The-Iron-Yard-Orlando/">http://www.meetup.com/The-Iron-Yard-Orlando/</a></p>
+  <p>See you then!</p>
 ```
 
 `<section>`
@@ -126,11 +130,11 @@ The HTML Section Element (<section>) represents a generic section of a document,
 * examples:
   * url:  http://www.usatoday.com/
 ```
-    * <section id="module-position-7" class="section-highlights-module primary-module-last section-highlights-card-module section-highlights-primary section-highlights-primary-module primary-module primary-module-primary-flex-sidebar-page primary-module-primary-flex-sidebar-page-last card-primary"
+    <section id="module-position-7" class="section-highlights-module primary-module-last section-highlights-card-module section-highlights-primary section-highlights-primary-module primary-module primary-module-primary-flex-sidebar-page primary-module-primary-flex-sidebar-page-last card-primary"
     data-layout-type="primary"
     >
-    * <section class="shpm-section shpm-section-odd">
-    * <section id="section_home" class="home card card-primary-flex-sidebar-page  " data-section-id="home" data-subsection-id="" >
+    <section class="shpm-section shpm-section-odd">
+    <section id="section_home" class="home card card-primary-flex-sidebar-page  " data-section-id="home" data-subsection-id="" >
 ```
 
 `<ul>`
@@ -141,9 +145,9 @@ There is no limitation to the depth and imbrication of lists defined with the <o
 * examples:
   * url: http://orlando.theironyard.com/
 ```
-  * <ul class="meta-tools clearfix">
-  * <ul class="share-items">
-  * <ul class="links module"></ul>
+  <ul class="meta-tools clearfix">
+  <ul class="share-items">
+  <ul class="links module"></ul>
 ```
 
 `<table>`
@@ -163,9 +167,9 @@ In this order:
 * examples:
   * url: http://www.intellicast.com/Local/Weather.aspx?location=USFL0372
 ```
-    * <table style="width:100%;">
-    * <table id="pwsTable">
-    * <table cellspacing="0" border="0" id="ctl00_ctl00_master_body_ctl00_SingleStorm" style="width:100%;border-collapse:collapse;">
+    <table style="width:100%;">
+    <table id="pwsTable">
+    <table cellspacing="0" border="0" id="ctl00_ctl00_master_body_ctl00_SingleStorm" style="width:100%;border-collapse:collapse;">
 ```
 
 `<article>`
@@ -174,7 +178,7 @@ The HTML <article> Element represents a self-contained composition in a document
 * examples:
   * url: http://orlando.theironyard.com/
 ```
-    * <article class="post type-text" id="100189034319">
-    * <article class="post type-text" id="100079465824">
-    * <article class="post type-text" id="97086023659">
+    <article class="post type-text" id="100189034319">
+    <article class="post type-text" id="100079465824">
+    <article class="post type-text" id="97086023659">
 ```
