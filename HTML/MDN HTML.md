@@ -33,6 +33,12 @@ The HTML <footer> Element represents a footer for its nearest sectioning content
       </div>
     </div>
   </footer><script src="http://static.tumblr.com/ymcvd4r/Raan0lekb/script.js" type="text/javascript"></script>
+    * url:http://blog.theironyard.com/
+      * <footer>
+    <div class="footer-wrap content-wrap clearfix">
+    * url:  http://www.usatoday.com/
+      * <footer class="site-footer clearfix">
+
 
 **`<form>`**
 Input form
@@ -45,7 +51,10 @@ The HTML <form> element represents a document section that contains interactive 
       * <form>
               <input type="text" id="st-search-input" class="search-field" />
             </form>
-
+    * url: http://blog.theironyard.com/
+      * <form>
+              <input type="text" id="st-search-input" class="search-field" />
+            </form>
 
 **`<h1>` through `<h6>`**
 Heading levels 1-6
@@ -77,6 +86,11 @@ The HTML <header> Element represents a group of introductory or navigational aid
 * examples:
   * url: http://orlando.theironyard.com/
     * <header style="background-image:url(http://static.tumblr.com/3c7cd96cde56779343d2e9a22afec085/w5gxxfv/oCrn8vkw8/tumblr_static_9cxjqqnfamsccsg4ow84sg8kg.jpg);"></header>
+  * url:  http://blog.theironyard.com/
+    * <header style="background-image:url(http://static.tumblr.com/6ead77da4bf66eddf3998acad57b975e/w5gxxfv/w3Sn9hotu/tumblr_static_1nxex1e3d5y8cc40o4cccoc0w.jpg);"></header>
+  * url:  http://www.usatoday.com/
+    * <header data-default-fixed="false" data-default-open="true" class=" site-header ">
+
 
 **`<p>`**
 Paragraph
@@ -91,7 +105,12 @@ The HTML <p> element (or HTML Paragraph Element) represents a paragraph of text.
 Section of a web page
 The HTML Section Element (<section>) represents a generic section of a document, i.e., a thematic grouping of content, typically with a heading. Each <section> should be identified, typically by including a heading (h1-h6 element) as a child of the <section> element.
 * examples:
-  * url:
+  * url:  http://www.usatoday.com/
+    * <section id="module-position-7" class="section-highlights-module primary-module-last section-highlights-card-module section-highlights-primary section-highlights-primary-module primary-module primary-module-primary-flex-sidebar-page primary-module-primary-flex-sidebar-page-last card-primary"
+    data-layout-type="primary"
+    >
+    * <section class="shpm-section shpm-section-odd">
+    * <section id="section_home" class="home card card-primary-flex-sidebar-page  " data-section-id="home" data-subsection-id="" >
 
 **`<ul>`**
 Unordered list
@@ -119,7 +138,12 @@ In this order:
     * either zero or more <tbody> elements,
     * or one or more <tr> elements
 * examples:
-  * url: http://orlando.theironyard.com/
+  * url: http://www.intellicast.com/Local/Weather.aspx?location=USFL0372
+    * <table style="width:100%;">
+    * <table id="pwsTable">
+    * <table cellspacing="0" border="0" id="ctl00_ctl00_master_body_ctl00_SingleStorm" style="width:100%;border-collapse:collapse;">
+
+
 
 **`<article>`**
 Article content
