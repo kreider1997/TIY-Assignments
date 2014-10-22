@@ -1,49 +1,95 @@
 ##HTML reference on MDN
 
-####assignment 18 additions
+####assignment 18 additions:
+
 `<head>`
 Represents a collection of metadata about the document, including links to, or definitions of, scripts and style sheets.
 * The HTML Head Element (`<head>`) provides general information (metadata) about the document, including its title and links to or definitions of scripts and style sheets
-*examples:
-  * url:  
+* examples:
+  * url:  http://www.w3schools.com/js/js_comparisons.asp
 ```html
+<head>
+<title>JavaScript Comparison and Logical Operators</title>
+<style>a.menu_js_comparisons{font-weight:bold;}</style>
+<style>
+</head>
+```
 
-```  
+* url: http://javascript.info/tutorial/objects
+```html
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+```
+
+* url:  http://javascript.info/tutorial/objects
+```html
+<head>
+<meta name="robots" content="index,follow" />
+```
 
 `<title>`
 Defines the title of the document, shown in a browser's title bar or on the page's tab. It can only contain text and any contained tags are not interpreted.
 * The HTML `<title>` element (HTML Title Element) defines the title of the document, shown in a browser's title bar or on the page's tab. It can only contain text and any contained tags are not interpreted.
-*examples:
-  * url:  
+* examples:
+  * url: http://www.w3schools.com/js/js_comparisons.asp
 ```html
-
+<title>JavaScript Comparison and Logical Operators</title>
+```
+  * url:  http://javascript.info/tutorial/objects
+```html
+<title>Objects | JavaScript Tutorial</title>
+```
+  * url:  http://pirateipsum.me/
+```html
+<title>Arr! It's Pirate Ipsum Generator</title>
 ```
 
 `<base>`
 Defines the base URL for relative URLs in the page.
 * The HTML Base Element (`<base>`) specifies the base URL to use for all relative URLs contained within a document.There is maximum one `<base>` element in a document.
-*examples:
-  * url:  
+* examples:
+  * url: http://www.w3schools.com/tags/tag_base.asp
 ```html
-
+<base href="http://www.w3schools.com/images/" target="_blank">
+```
+  * url:  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+```html
+<base href="http://www.example.com/">
+<base target="_blank" href="http://www.example.com/">
 ```
 
 `<link>`
 Used to link JavaScript and external CSS with the current HTML document.
 * The HTML Link Element (`<link>`) specifies relationships between the current document and an external resource. Possible uses for this element include defining a relational framework for navigation. This Element is most used to link to style sheets.
-*examples:
-  * url:  
+* examples:
+  * url:  http://www.w3schools.com/js/js_comparisons.asp
 ```html
-
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="/stdtheme.css" />
+```
+  * url:  http://javascript.info/tutorial/objects
+```html
+<link rel="next" href="/tutorial/array" />
 ```
 
 `<style>`
 Used to write inline CSS.
 * The HTML `<style>` element contains style information for a document, or a part of document. The specific style information is contained inside of this element, usually in the CSS.
-*examples:
-  * url:  
+* examples:
+  * url: http://www.w3schools.com/js/js_comparisons.asp
 ```html
-
+<style>a.menu_js_comparisons{font-weight:bold;}</style>
+<style>
+#smallnavContainer {display:none;}
+</style>
+```
+  * url:  http://javascript.info/tutorial/objects
+```html
+<div style="clear:both"></div>
+```
+* url:  http://pirateipsum.me/
+```html
+<style type="text/css">
 ```
 
 `<script>`
@@ -51,46 +97,102 @@ Defines either an internal script or a link to an external script. The script la
 * The HTML `<script>` element is used to embed or reference an executable script within an HTML or XHTML document.
 
 Scripts without async or defer attributes, as well as inline scripts, are fetched and executed immediately, before the browser continues to parse the page.
-*examples:
-  * url:  
+* examples:
+  * url: http://www.w3schools.com/js/js_comparisons.asp
 ```html
-
+<script type='text/javascript'>
+<script>
+			if (Math.random()<0.5)
+				{
+				x=document.getElementById("altovatext");
+				x.innerHTML="XML Editor - Free Trial!";
+				x.href="http://www.altova.com/ref/?s=w3s_text2&q=xmlspy";
+				}
+			</script>
+<script src="/w3schools.js"></script>
+```
+  * url:  http://javascript.info/tutorial/objects
+```html
+<script type="text/javascript" src="/misc/jquery.js?l"></script>
 ```
 
 `<noscript>`
 Defines alternative content to display when the browser doesn't support scripting.
 *The HTML `<noscript>` Element defines a section of html to be inserted if a script type on the page is unsupported or if scripting is currently turned off in the browser.
-*examples:
-  * url:  
+* examples:
+  * url: http://www.usatoday.com/
 ```html
-
+<noscript class="MOAT-gannettdigital989586921?
 ```
+  * url: http://www.w3schools.com/tags/tag_noscript.asp
+```html
+<noscript>Your browser does not support JavaScript!</noscript>
+```
+  *url: http://reference.sitepoint.com/html/noscript
+```html
+<noscript>
+  <h1>Houston, we have a problem</h1>
+  <p>It appears that your web browser does not support JavaScript,
+      or you have temporarily disabled scripting. Either way, this site
+      won't work without it. Please take a look at our
+      <a href="/support/browsers/">browser support page</a> for more help.
+</noscript>
+```
+
 
 `<template>`
 Container for client-side content instantiated during runtime using JavaScript.
 *The HTML template element `<template>` is a mechanism for holding client-side content that is not to be rendered when a page is loaded but may subsequently be instantiated during runtime using JavaScript. Think of a template as a content fragment that is being stored for subsequent use in the document. The parser does process the content of the `<template>` element during the page load to ensure that it is valid, however.
-*examples:
-  * url:  
+* examples:
+  * url: http://www.html5rocks.com/en/tutorials/webcomponents/template/
 ```html
-
+<template id="mytemplate">
+  <img src="" alt="great image">
+  <div class="comment"></div>
+</template>
+<template>
+  <div>Template used: <span>0</span></div>
+  <script>alert('Thanks!')</script>
+</template>
 ```
+  * url: http://www.sitepoint.com/html5-template-tag/
+```html
+<template id="mytablerow">
+<tr>
+<td class="record"></td>
+<td></td>
+<td></td>
+</tr>
+</template>
+```  
+
 
 `<body>`
 Represents the content of an HTML document. There is only one `<body>` element in a document.
 * The HTML `<body>` element represents the content of an HTML document. There is only one `<body>` element in a document.
-*examples:
-  * url:  
+* examples:
+  * url: http://www.w3schools.com/js/js_comparisons.asp
 ```html
-
+<body>
+<div id='smallnavContainer'>
+```
+  * url:  http://javascript.info/tutorial/objects
+```html
+<body class="body-main arial">
+```
+  * url:  http://pirateipsum.me/
+```html
+<body onload="init();">
 ```
 
 `<nav>`
 Defines a section that contains only navigation links.
 * The HTML Navigation Element (<nav>) represents a section of a page that links to other pages or to parts within the page: a section with navigation links.
-*examples:
-  * url:  
+* examples:
+  * url: http://www.usatoday.com/
 ```html
-
+<nav class="site-nav">
+<nav><div class="fronts">
 ```
 
 
