@@ -1,7 +1,9 @@
 ##HTML reference on MDN
-
+----
 ####assignment 18 additions:
 
+----
+####20
 `<head>`
 Represents a collection of metadata about the document, including links to, or definitions of, scripts and style sheets.
 * The HTML Head Element (`<head>`) provides general information (metadata) about the document, including its title and links to or definitions of scripts and style sheets
@@ -27,6 +29,8 @@ Represents a collection of metadata about the document, including links to, or d
 <meta name="robots" content="index,follow" />
 ```
 
+----
+####19
 `<title>`
 Defines the title of the document, shown in a browser's title bar or on the page's tab. It can only contain text and any contained tags are not interpreted.
 * The HTML `<title>` element (HTML Title Element) defines the title of the document, shown in a browser's title bar or on the page's tab. It can only contain text and any contained tags are not interpreted.
@@ -44,6 +48,8 @@ Defines the title of the document, shown in a browser's title bar or on the page
 <title>Arr! It's Pirate Ipsum Generator</title>
 ```
 
+----
+####18
 `<base>`
 Defines the base URL for relative URLs in the page.
 * The HTML Base Element (`<base>`) specifies the base URL to use for all relative URLs contained within a document.There is maximum one `<base>` element in a document.
@@ -58,6 +64,8 @@ Defines the base URL for relative URLs in the page.
 <base target="_blank" href="http://www.example.com/">
 ```
 
+----
+####17
 `<link>`
 Used to link JavaScript and external CSS with the current HTML document.
 * The HTML Link Element (`<link>`) specifies relationships between the current document and an external resource. Possible uses for this element include defining a relational framework for navigation. This Element is most used to link to style sheets.
@@ -72,6 +80,8 @@ Used to link JavaScript and external CSS with the current HTML document.
 <link rel="next" href="/tutorial/array" />
 ```
 
+----
+####16
 `<style>`
 Used to write inline CSS.
 * The HTML `<style>` element contains style information for a document, or a part of document. The specific style information is contained inside of this element, usually in the CSS.
@@ -92,6 +102,8 @@ Used to write inline CSS.
 <style type="text/css">
 ```
 
+----
+####15
 `<script>`
 Defines either an internal script or a link to an external script. The script language is JavaScript.
 * The HTML `<script>` element is used to embed or reference an executable script within an HTML or XHTML document.
@@ -116,6 +128,8 @@ Scripts without async or defer attributes, as well as inline scripts, are fetche
 <script type="text/javascript" src="/misc/jquery.js?l"></script>
 ```
 
+----
+####14
 `<noscript>`
 Defines alternative content to display when the browser doesn't support scripting.
 *The HTML `<noscript>` Element defines a section of html to be inserted if a script type on the page is unsupported or if scripting is currently turned off in the browser.
@@ -139,7 +153,8 @@ Defines alternative content to display when the browser doesn't support scriptin
 </noscript>
 ```
 
-
+----
+####13
 `<template>`
 Container for client-side content instantiated during runtime using JavaScript.
 *The HTML template element `<template>` is a mechanism for holding client-side content that is not to be rendered when a page is loaded but may subsequently be instantiated during runtime using JavaScript. Think of a template as a content fragment that is being stored for subsequent use in the document. The parser does process the content of the `<template>` element during the page load to ensure that it is valid, however.
@@ -166,7 +181,8 @@ Container for client-side content instantiated during runtime using JavaScript.
 </template>
 ```  
 
-
+----
+####12
 `<body>`
 Represents the content of an HTML document. There is only one `<body>` element in a document.
 * The HTML `<body>` element represents the content of an HTML document. There is only one `<body>` element in a document.
@@ -185,6 +201,8 @@ Represents the content of an HTML document. There is only one `<body>` element i
 <body onload="init();">
 ```
 
+----
+####11
 `<nav>`
 Defines a section that contains only navigation links.
 * The HTML Navigation Element (<nav>) represents a section of a page that links to other pages or to parts within the page: a section with navigation links.
@@ -195,10 +213,12 @@ Defines a section that contains only navigation links.
 <nav><div class="fronts">
 ```
 
-
+----
 
 ####Block-level elements
 
+----
+####10
 `<div>`
 Document division
 * The HTML `<div>` element (or HTML Document Division Element) is the generic container for flow content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element (such as `<article>` or `<nav>`) is appropriate.
@@ -210,6 +230,8 @@ Document division
     <article class="post type-text" id="100189034319"><div class="clearfix rte">
 ```
 
+----
+####9
 `<footer>`
 * Section of page footer
 The HTML `<footer>` Element represents a footer for its nearest sectioning content or sectioning root element (i.e, its nearest parent `<article>, <aside>, <nav>, <section>, <blockquote>, <body>, <details>, <fieldset>, <figure>, <td>`). A footer typically contains information about the author of the section, copyright data or links to related documents.
@@ -246,6 +268,8 @@ The HTML `<footer>` Element represents a footer for its nearest sectioning conte
     <footer class="site-footer clearfix">
 ```
 
+----
+####8
 `<form>`
 * Input form
 The HTML `<form>` element represents a document section that contains interactive controls to submit information to a web server.
@@ -267,6 +291,8 @@ The HTML `<form>` element represents a document section that contains interactiv
             </form>
 ```
 
+----
+####7
 `<h1>` through `<h6>`
 * Heading levels 1-6
 Heading elements implement six levels of document headings, `<h1>` is the most important and `<h6>` is the least. A heading element briefly describes the topic of the section it introduces. Heading information may be used by user agents, for example, to construct a table of contents for a document automatically.
@@ -292,6 +318,8 @@ Heading elements implement six levels of document headings, `<h1>` is the most i
       </h1>
 ```
 
+----
+####6
 `<header>`
 * Section or page header
 The HTML `<header>` Element represents a group of introductory or navigational aids. It may contain some heading elements but also other elements like a logo, wrapped section's header, a search form, and so on.
@@ -311,6 +339,8 @@ The HTML `<header>` Element represents a group of introductory or navigational a
     <header data-default-fixed="false" data-default-open="true" class=" site-header ">
 ```
 
+----
+####5
 `<p>`
 * Paragraph
 The HTML `<p>` element (or HTML Paragraph Element) represents a paragraph of text. Paragraphs are block-level elements.
@@ -322,6 +352,8 @@ The HTML `<p>` element (or HTML Paragraph Element) represents a paragraph of tex
   <p>See you then!</p>
 ```
 
+----
+####4
 `<section>`
 * Section of a web page
 The HTML Section Element (`<section>`) represents a generic section of a document, i.e., a thematic grouping of content, typically with a heading. Each `<section>` should be identified, typically by including a heading (h1-h6 element) as a child of the `<section>` element.
@@ -335,6 +367,8 @@ The HTML Section Element (`<section>`) represents a generic section of a documen
     <section id="section_home" class="home card card-primary-flex-sidebar-page  " data-section-id="home" data-subsection-id="" >
 ```
 
+----
+####3
 `<ul>`
 * Unordered list
 The HTML unordered list element (`<ul>`) represents an unordered list of items, namely a collection of items that do not have a numerical ordering, and their order in the list is meaningless. Typically, unordered-list items are displayed with a bullet, which can be of several forms, like a dot, a circle or a squared. The bullet style is not defined in the HTML description of the page, but in its associated CSS, using the list-style-type property.
@@ -348,6 +382,8 @@ There is no limitation to the depth and imbrication of lists defined with the `<
   <ul class="links module"></ul>
 ```
 
+----
+####2
 `<table>`
 * Table
 The HTML Table Element (`<table>`) represents data in two dimensions or more.
