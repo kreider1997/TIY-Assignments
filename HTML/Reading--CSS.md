@@ -83,36 +83,229 @@ A positive `<percentage>` of the parent element's font size.
 It is best to use values that are relative to the user's default font size, and avoid absolute values such as lengths with units other than em or ex. However, if such absolute values must be used, px are preferred over other units because their meaning does not vary depending on what the operating system thinks (generally incorrectly) the resolution of the monitor is.
 Examples:
 ```css
-
+p {  font-size: 1.6em; /* 1.6em = 16px */}
+```
+```css
+h1 { font-size: 250% }
+```
+```css
+.point {
+	font-size: 24pt;
 ```
 
 ----
 ####4
-
+**font-weight**
+The font-weight CSS property specifies the weight or boldness of the font. However, some fonts are not available in all weights; some are available only on normal and bold.
+Values-
+`normal`
+Normal font weight. Same as 400.
+`bold`
+Bold font weight. Same as 700.
+`lighter`
+One font weight lighter than the parent element (among the available weights of the font).
+`bolder`
+One font weight darker than the parent element (among the available weights of the font).
+`100, 200, 300, 400, 500, 600, 700, 800, 900`
+Numeric font weights for fonts that provide more than just normal and bold. If the exact weight given is unavailable, then 600-900 use the closest available darker weight (or, if there is none, the closest available lighter weight), and 100-500 use the closest available lighter weight (or, if there is none, the closest available darker weight). This means that for fonts that provide only normal and bold, 100-500 are normal, and 600-900 are bold.
+Examples:
+```css
+p { font-weight: bold; }
+```
+```css
+h1 { font-weight: 500; }
+```
+```css
+span { font-weight: lighter; }
+```
 
 ----
 ####5
+**font-variant**
+The font-variant CSS property selects a normal, or small-caps face from a font family. Setting the CSS Level 2 (Revision 1) values of the  font-variant property, that is normal or small-caps, is also possible by using the `font` shorthand.
 
+This property acts as a shorthand and, when set, resets the unspecified values of the longhand properties: `font-variant-caps`, `font-variant-numeric`, `font-variant-alternates`, `font-variant-ligatures`, and `font-variant-east-asian`.
+Values -
+`normal`
+Specifies a normal font face; each of the longhand properties has an initial value of normal. Longhand properties of font-variant are: `font-variant-caps`, `font-variant-numeric`, `font-variant-alternates`, `font-variant-ligatures`, and `font-variant-east-asian`.
+`none`
+Sets the value of the font-variant-ligatures to none and the values of the other longhand property as normal, their initial value.
+`<common-lig-values>`, `<discretionary-lig-values>`, `<historical-lig-values>`, `<contextual-alt-values>`
+Specifies the keywords related to the font-variant-ligatures longhand property. The possible values are: common-ligatures, no-common-ligatures, discretionary-ligatures, no-discretionary-ligatures, historical-ligatures, no-historical-ligatures, contextual, and no-contextual.
+`stylistic()`,  `historical-forms`, `styleset()`, `character-variant()`, `swash()`, `ornaments()`, `annotation()`
+Specifies the keywords and functions related to the font-variant-alternates longhand property.
+`small-caps, all-small-caps, petite-caps, all-petite-caps, unicase, titling-caps`
+Specifies the keywords and functions related to the font-variant-caps longhand property.
+`<numeric-figure-values>`, `<numeric-spacing-values>`, `<numeric-fraction-values>`, `ordinal`, `slashed-zero`
+Specifies the keywords related to the font-variant-numeric longhand property. The possible values are:  lining-nums, oldstyle-nums, proportional-nums, tabular-nums, diagonal-fractions, stacked-fractions, ordinal, and slashed-zero.
+`<east-asian-variant-values>`, `<east-asian-width-values>`, ruby
+Specifies the keywords related to the font-variant-east-asian longhand property. The possible values are: jis78, jis83, jis90, jis04, simplified, traditional, full-width, proportional-width, ruby.
+Examples:
+```css
+p {  font-variant: small-caps; }
+```
+```css
+div {    font-variant:normal;  }
+```
+```css
+div {    font-variant:initial; }
+```
 
 ----
 ####6
-
+**text-align**
+The text-align CSS property describes how inline content like text is aligned in its parent block element. text-align does not control the alignment of block elements itself, only their inline content.
+Values -
+`start`
+The same as left if direction is left-to-right and right if direction is right-to-left.
+`end`
+The same as right if direction is left-to-right and left if direction is right-to-left.
+`left`
+The inline contents are aligned to the left edge of the line box.
+`right`
+The inline contents are aligned to the right edge of the line box.
+`center`
+The inline contents are centered within the line box.
+`<string>`
+The first occurrence of the one-char string is the element used for alignment. the keyword that follows or precedes it indicates how it is aligned. This allows to align numeric values on the decimal point, for instance.
+`justify`
+The text is justified. Text should line up their left and right edges to the left and right content edges of the paragraph.
+`match-parent`
+Similar to inherit with the difference that the value start and end are calculated according the parent's direction and are replaced by the adequate left or right value.
+Examples:
+```css
+div { text-align: center; border:solid; }
+```
+```css
+div { text-align: center; border:solid; }
+```
+```css
+div { text-align:-moz-center; text-align:-webkit-center; border:solid; }
+```
 
 ----
 ####7
+**text-decoration**
+The text-decoration CSS property is used to set the text formatting to underline, overline, line-through or blink.
 
+Underline and overline decorations are positioned under the text, line-through over it.
+Values-
+Accepts one or more whitespace separated values:
+
+`none`
+Produces no text decoration.
+`underline`
+Each line of text is underlined.
+`overline`
+Each line of text has a line above it.
+`line-through`
+Each line of text has a line through the middle.
+`blink`
+Is a keyword making the text slowlyblinks. Though valid, the effect is deprecated and the specification allows browser to ignore this value. Note that not blinking the text is one technique to satisfy checkpoint 3.3 of WAI-UAAG.
+`-moz-anchor-decoration`
+Mozilla CSS Extension, not suitable for web content.
+Examples:
+```css
+h1.under {   text-decoration: underline; }
+```
+```css
+p.blink {  text-decoration: blink; }
+```
+```css
+p.underover {  text-decoration: underline overline; }
+```
 
 ----
 ####8
-
+**text-indent**
+The text-indent CSS property specifies how much horizontal space should be left before the beginning of the first line of the text content of an element. Horizontal spacing is with respect to the left (or right, for right-to-left layout) edge of the containing block element's box.
+Values -
+`<length>`
+Indentation is specified as an absolute `<length>`. Negative values are allowed. See `<length>` values for possible units.
+`<percentage>`
+Indentation is a `<percentage>` of the containing block width.
+`each-line`
+Indentation affects the first line of the block container as well as each line after a forced line break , but does not affect lines after a soft wrap break .
+`hanging`
+Inverts which lines are indented. All lines except the first line will be indented.
+Examples:
+```css
+p {   text-indent: 5em;
+  background: powderblue;}
+```
+```css
+p {   text-indent: 30%;
+  background: plum; }
+```
+```css
+p {  text-indent: 50px;}
+```
 
 ----
 ####9
+**text-overflow**
+The text-overflow CSS property determines how overflowed content that is not displayed is signaled to the users. It can be clipped, or display an ellipsis ('…', U+2026 HORIZONTAL ELLIPSIS) or a Web author-defined string.
+Clipping happens at the border of the box; to clip at the character limit an empty custom string can be used ('').
 
+This property only affects content that is overflowing a block container element in its inline progression direction (not text overflowing at the bottom of a box, for example). Text can overflow when it is prevented from wrapping (e.g., due to ‘white-space:nowrap’) or a single word being too long to fit.
+
+This CSS property doesn't force an overflow to occur; to do so and make text-overflow to be applied, the author must apply some additional properties on the element, like setting overflow to hidden.
+Values -
+`clip`
+This keyword value indicates to truncate the text at the limit of the content area, therefore the truncation can happen in the middle of a character. To truncate at the transition between two characters, the empty string value ('') must be used. The value clip is the default for this property.
+`ellipsis`
+This keyword value indicates to display an ellipsis ('…', U+2026 HORIZONTAL ELLIPSIS) to represent clipped text. The ellipsis is displayed inside the content area, decreasing the amount of text displayed. If there is not enough space to display the ellipsis, it is clipped.
+`<string>`
+The `<string>` to be used to represent clipped text. The string is displayed inside the content area, shortening more the size of the displayed text. If there is not enough place to display the string itself, it is clipped.
+Examples:
+```css
+p {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;              /* "overflow" value must be different from "visible" */
+
+  text-overflow:    ellipsis;
+}
+```
+```css
+#myDIV {
+    overflow:hidden;
+    text-overflow:clip;
+}
+```
+```css
+#myDIV {
+    overflow:hidden;
+    text-overflow:initial;
+}
+```
 
 ----
 ####10
-
+**text-transform**
+The text-transform CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized.
+Values -
+`capitalize`
+Is a keyword forcing the first letter of each word to be converted to uppercase. Other characters are unchanged; that is, they retain their original case as written in the element's text. A letter is any Unicode character part of the Letter or Number general categories  : it excludes any punctuation marks or symbols at the beginning of the word.
+Authors should not expect capitalize to follow language-specific titlecasing conventions (such as skipping articles in English).
+`uppercase`
+Is a keyword forcing all characters to be converted to uppercase.
+`lowercase`
+Is a keyword forcing all characters to be converted to lowercase.
+`none`
+Is a keyword preventing the case of all characters to be changed.
+`full-width`
+Is a keyword forcing the writing of a character, mainly ideograms and latin scripts inside a square, allowing them to be aligned in the usual East Asian scripts (like Chinese or Japanese).
+Examples:
+```css
+p { text-transform: capitalize; }
+```
+```css
+p { text-transform: uppercase; }
+```
+```css
+p { text-transform: lowercase; }
+```
 
 
 ----
