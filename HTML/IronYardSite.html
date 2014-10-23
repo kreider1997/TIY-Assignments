@@ -1,6 +1,14 @@
 <html>
-  <body>
+  <head>
+    <title>Iron Yard Revised</title>
+    <link href="/Users/keithkreider/Downloads/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
+
+
     <style>
+    body {
+      font-family: sans-serif;
+    }
 header {
     background-image: url(http://static.tumblr.com/3c7cd96cde56779343d2e9a22afec085/w5gxxfv/oCrn8vkw8/tumblr_static_9cxjqqnfamsccsg4ow84sg8kg.jpg);
     background-repeat: no-repeat;
@@ -10,7 +18,7 @@ header {
     margin-top: -75px;
     margin-left: 10%;
     border: 5pt solid white;
-    width: 150px;
+    width: 100px;
 }
 #logo img {
     width: 100px;
@@ -34,6 +42,23 @@ aside {
     width: 15%;
 }
     </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
+    <script>
+/**
+ * @param Number? String? I dunno! datePosted
+ * @param Same problem here... now
+ * @return Number of hours from `datePosted` until `now`
+ */
+function hoursAgo(datePosted, now){
+  // If only there was a way to represent Dates and Times in JavaScript!
+  return (now - datePosted).toHours(); // Maybe?
+}
+
+var datePostedCollection = document.getElementsByClassName('datePosted');
+    </script>
+
+    </head>
+  <body>
     <header>
         <nav style="
           text-align: right;
@@ -72,17 +97,17 @@ aside {
           text-decoration: none;
           color: grey;
           border: 1px solid grey
-          ">&#9829;</a>
+          " class= "fa fa-heart"></a>
           <a href="#" style="
           text-decoration: none;
           color: grey;
           border: 1px solid grey
           ">&#8644;</a>
-          <a href="#" style="
+          <a href="#"style="
           text-decoration: none;
           color: grey;
           border: 1px solid grey
-          ">???</a>
+          " class= "fa fa-share-square-o"></a>
           <ahref="http://orlando.theironyard.com/post/100672003784/successful-orlando-tech-meetup-at-the-iron-yard" style= "
             float: right;
             color: grey;
