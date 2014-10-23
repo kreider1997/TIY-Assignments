@@ -1,5 +1,113 @@
 #CSS reference on MDN
 
+###**Layout rules like `float`, `clear` and `position`**
+
+----
+####1
+**float**
+
+The float CSS property specifies that an element should be taken from the normal flow and placed along the left or right side of its container, where text and inline elements will wrap around it. A floating element is one where the computed value of float is not none.
+Values-
+`left`
+Is a keyword indicating that the element must float on the left side of its containing block.
+`right`
+Is a keyword indicating that the element must float on the right side of its containing block.
+`none`
+Is a keyword indicating that the element must not float.
+
+----
+####2
+**clear**
+
+The clear CSS property specifies whether an element can be next to floating elements that precede it or must be moved down (cleared) below them.
+
+The clear property applies to both floating and non-floating elements.
+
+When applied to non-floating blocks, it moves the border edge of the element down until it is below the margin edge of all relevant floats. This movement (when it happens) causes margin collapsing not to occur.
+
+When applied to floating elements, it moves the margin edge of the element below the margin edge of all relevant floats. This affects the position of later floats, since later floats cannot be positioned higher than earlier ones.
+
+The floats that are relevant to be cleared are the earlier floats within the same block formatting context.
+Values -
+'none'
+The element is not moved down to clear past floating elements.
+'left'
+The element is moved down to clear past left floats.
+'right'
+The element is moved down to clear past right floats.
+'both'
+The element is moved down to clear past both left and right floats.
+
+----
+####3
+**Position**
+
+The position CSS property chooses alternative rules for positioning elements, designed to be useful for scripted animation effects.
+A positioned element is an element whose computed position property is relative, absolute, fixed or sticky.
+
+A relatively positioned element is an element whose computed position property is relative.
+
+An absolutely positioned element is an element whose computed position property is absolute or fixed.
+
+A stickily positioned element is an element whose computed position property is sticky.
+
+The top, right, bottom, and left properties specify the position of positioned elements.
+Values -
+`static`
+This keyword lets the element use the normal behavior, that is it is laid out in its current position in the flow.  The top, right, bottom, left and z-index properties do not apply.
+`relative`
+This keyword lays out all elements as though the element were not positioned, and then adjust the element's position, without changing layout (and thus leaving a gap for the element where it would have been had it not been positioned). The effect of position:relative on table-*-group, table-row, table-column, table-cell, and table-caption elements is undefined.
+`absolute`
+Do not leave space for the element. Instead, position it at a specified position relative to its closest positioned ancestor or to the containing block. Absolutely positioned boxes can have margins, they do not collapse with any other margins.
+`fixed`
+Do not leave space for the element. Instead, position it at a specified position relative to the screen's viewport and don't move it when scrolled. When printing, position it at that fixed position on every page.
+`sticky`
+The box position is calculated according to the normal flow (this is called the position in normal flow). Then the box is offset relative to its flow root and containing block and in all cases, including table elements, does not affect the position of any following boxes. When a box B is stickily positioned, the position of the following box is calculated as though B were not offset. The effect of ‘position: sticky’ on table elements is the same as for ‘position: relative’.
+
+----
+####4
+**height**
+
+The height CSS property specifies the height of the content area of an element. The content area is inside the padding, border, and margin of the element.
+The min-height and max-height properties override height.
+Values -
+`<length>`
+See `<length>` for possible units.
+`<percentage>`
+Specified as a `<percentage>` of containing block's height.
+`border-box`
+If present, the preceding `<length>` or `<percentage>` is applied to the element's border box.
+`content-box`
+If present, the preceding `<length>` or `<percentage>` is applied to the element's content box.
+`auto`
+The browser will calculate and select a height for the specified element.
+`max-content`
+The intrinsic preferred height.
+`min-content`
+The intrinsic minimum height.
+`available`
+The containing block height minus vertical margin, border and padding.
+`fit-content`
+The larger of:
+	*	the intrinsic minimum height
+	*	the smaller of the intrinsic preferred height and the available height
+
+----
+####5
+****
+**all**
+
+The CSS all shorthand property resets all properties, but unicode-bidi and direction to their initial or inherited value.
+Values -
+`initial`
+This keyword indicates to change all the properties applying to the element or the element's parent to their initial value. unicode-bidi and direction values are not affected.
+`inherit`
+This keyword indicates to change all the properties applying to the element or the element's parent to their parent value. unicode-bidi and direction values are not affected.
+`unset`
+This keyword indicates to change all the properties applying to the element or the element's parent to their parent value if they are inheritable or to their initial value if not. unicode-bidi and direction values are not affected.
+
+
+
 ###**Styles  with 'font' and 'text' affecting rules, with examples!**
 
 ----
