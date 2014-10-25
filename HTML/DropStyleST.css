@@ -1,0 +1,29 @@
+
+section {
+  background-color: #40B9D1;
+}
+body {
+  font: serif;
+}
+.start {
+  color: #40B9D1;
+  margin: 10px 0 10px 120px;
+}
+.icon {
+  float: right;
+  padding: 0 120px 0 0;
+  color: #40B9D1;
+}
+nav {
+  margin-left: 70px;
+  border-bottom: 10px solid #40B9D1;
+}
+  nav li {
+    display: inline;
+    color: grey;
+    padding: 0 10px 0 10px;
+
+  }
+  nav li:hover {
+    color: #40B9D1;
+  }
