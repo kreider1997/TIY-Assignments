@@ -1,0 +1,19 @@
+
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+<link href="/Users/keithkreider/Downloads/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+header {
+  margin: 50px 0 80px 0;
+}
+.start {
+  color: #40B9D1;
+  margin: 10px 0 10px 12%;
+}
+.icon {
+  float: right;
+  padding: 10px 120px 10px 10px;
+  color: #40B9D1;
