@@ -1,8 +1,4 @@
 
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
-<link href="/Users/keithkreider/Downloads/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -17,3 +13,10 @@ header {
   float: right;
   padding: 10px 120px 10px 10px;
   color: #40B9D1;
+}
+header i {
+  border: 2pt solid #40B9D1;
+  border-radius: 50%;
+  margin-right: 3px;
+  padding: .2em .25em .15em;
+}
