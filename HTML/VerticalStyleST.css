@@ -24,11 +24,17 @@ header i {
   border-radius: 50%;
   padding: .2em .25em .15em;
 }
+h3 {
+  border-bottom: 1px solid white;
+  background: #40B9D1;
+  color: white;
+  width: 50%;
+  margin: 0 15% 0 40%;
+}
 p {
   border-left: 6px solid #40B9D1;
   background: #40B9D1;
   color: white;
   width: 50%;
-  margin-left: 40%;
-  margin-right: 15%;
+  margin: 0 15% 0 40%;
 }
