@@ -6,7 +6,10 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 header {
-  margin: 50px 0 80px 0;
+  width: 80%;
+  margin: auto;
+  max-width: 900px;
+  font-size: 150%;
 }
 .start {
   color: #40B9D1;
@@ -14,13 +17,19 @@ header {
 }
 .icon {
   float: right;
-  padding: 10px 120px 10px 10px;
-  color: #40B9D1;
+  padding: 0px 0% 0px 0px;
+  position: relative;
+  top: -42pt;
+}
+header i:hover {
+  background-color: #40B9D1;
+  color: white;
 }
 header i {
-  border: 2pt solid #40B9D1;
-  border-radius: 50%;
   margin-right: 3px;
+  color: #40B9D1;
+  border: 3px solid #40B9D1;
+  border-radius: 50%;
   padding: .2em .25em .15em;
 }
 nav {
@@ -38,3 +47,19 @@ nav {
   nav li:hover {
     color: #40B9D1;
   }
+
+@media (max-width: 1048px) {
+
+}
+
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+  .icon {
+    float: none;
+    padding: 10px 0 10px 14%;
+    text-align: center;
+    top: 0;
+  }
+}
