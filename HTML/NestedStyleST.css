@@ -2,7 +2,7 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
-header {
+hgroup {
   width: 80%;
   margin: auto;
   max-width: 900px;
@@ -14,26 +14,50 @@ header {
 }
 .icon {
   float: right;
+  color: #40B9D1;
   padding: 0px 0% 0px 0px;
   position: relative;
   top: -42pt;
 }
-header i:hover {
+hgroup i:hover {
   background-color: #40B9D1;
   color: white;
 }
 
-header i {
-  border: 2pt solid #40B9D1;
+hgroup i {
+  border: 3pt solid #40B9D1;
   border-radius: 50%;
   margin-right: 3px;
   padding: .2em .25em .15em;
+.accordion {
+  list-style-type: none;
+}
+
+.main h3:before,
+.main h4:before {
+  padding-right: .5em;
+}
+
+.main h3:before {
+  content: '\02193';
+}
+
+.main h4:before {
+  content: '\2A01';
+}
+
+.main li > :first-child ~ * {
+  display: none; /* targets nested ul and its children */
+}
+.main li > :first-child ~ * {
+  display: block;
+}
+
 
 }
 @media (max-width: 1048px) {
 
 }
-
 
 
 @media (max-width: 768px) {
