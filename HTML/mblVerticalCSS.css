@@ -1,0 +1,102 @@
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+header {
+  text-align: center;
+  margin: auto;
+  min-width: 300px;
+  font-size: 150%;
+}
+.start {
+  color: #40B9D1;
+  margin: 10px 0 10px 0%;
+}
+.icon {
+  float: none;
+  padding: 0px 0% 0px 0px;
+  text-align: center;
+  top: 0;
+}
+
+header i:hover {
+  background-color: #40B9D1;
+  color: white;
+}
+
+header i {
+  margin-right: 3px;
+  color: #40B9D1;
+  border: 3px solid #40B9D1;
+  border-radius: 50%;
+  padding: .2em .25em .15em;
+}
+#container {
+  width: 80%;
+  margin: auto;
+  margin-top: 70px;
+  max-width: 900px;
+}
+ol{
+  list-style: none;
+}
+li {
+  color: white;
+}
+article {
+  background-color: #40B9D1;
+  border-radius: 5pt;
+  padding: 0 1em 0 1em;
+}
+article > h3 {
+  border-bottom: 1pt dotted;
+  font-size: 150%;
+}
+ol > li.one:before {
+  content: "\260E";
+}
+ol > li.two:before {
+  content: "\2708";
+}
+ol > li.three:before {
+  content: "\2714";
+}
+ol > li.four:before {
+  content: "\2622";
+}
+ol > li.five:before {
+  content: "\262F"
+}
+ol > li.six:before {
+  content: "\265E"
+}
+ol > li.seven:before {
+  content: "\2702"
+}
+ol > li:before {
+  background-color: #287EB8;
+  display: none;
+  margin: 0;
+  position: static;
+  float: right;
+  font-size: 110%;
+  border: 0.5em solid #40B9D1;
+  border-radius: 50%;
+  width: 2m;
+  height: 2em;
+}
+ol > li article:after {
+  clear: both;
+  padding: 0;
+  content: "\25B2";
+  color: #40B9D1;
+  position: absolute;
+  right: 95%;
+  top: 48;
+}
+ol > li:nth-child(even) article {
+  background-color: #287EB8;
+}
+ol > li:nth-child(even) article:after {
+  color: #287EB8;
+}

@@ -34,6 +34,9 @@ hgroup i {
   list-style-type: none;
 }
 
+.main {
+  color: blue;
+}
 .main h3:before,
 .main h4:before {
   padding-right: .5em;
