@@ -155,12 +155,12 @@ var navItems = document.getElementsByTagName('h3');
  */
 function clickNavItem(event){
   // if "this" navItem is "closed"...
-  if ( navItem.parentElement.className !== 'open' ){
-    makeEverythingClosed(navItems);
-    makeItOpen(navItem.parentElement);
+  if ( isClosed(this.parentElement) ){
+    makeEverythingClosed(_.pluck(navItems, 'parentElement'));
+    makeItOpen(this.parentElement);
   // otherwise if "this" navItem is "open"
-  } else if ( navItem.parentElement.className === 'open' ){
-    makeItClosed(navItem.parentElement);
+  } else if ( isOpen(this.parentElement) ){
+    makeItClosed(this.parentElement);
   }
 }; // END clickNavItem
 
@@ -170,17 +170,31 @@ _.each(navItems, function(navItem){
   navItem.onclick = clickNavItem;
 });
 
+var allTheH3s = document.getElementsByTagName('h3'),
+  downloadH3 = allTheH3s[1];
+
+downloadH3.onclick = function(event){
+  makeEverythingClosed(_.pluck(allTheH3s, 'parentElement');
+  if ( isOpen(this.parentElement)){
+    makeItClosed(this.parentElement);
+  }
+  if (isClosed(this.parentElement)){
+    makeItOpen(this.parentElement);
+  }
+};
 /**
  * @param HTMLElement element
  * @return Boolean if `element` is "open"
  */
 function isOpen(element){
+  return (element.className === 'open');
 }
 /**
  * @param HTMLElement element
  * @return Boolean if `element` is "closed"
  */
 function isClosed(element){
+  return !isOpen(element);
 
 }
 
@@ -194,6 +208,10 @@ function makeItClosed(element){
 
 function makeEverythingClosed(elements){
   // for every element in elements
+  _.each(elements, function(element){
+    element.parentElement.className = ' '
+    makeItClosed(element.parentElement);
+  });
   //  make it closed
 }
 

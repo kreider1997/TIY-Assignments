@@ -52,3 +52,10 @@ li {
   color: white;
   margin-bottom: 3ex;
 }
+
+@media (min-width: 600px){
+  .submenu > :first-child {
+    float: left;
+  }
+
+}
