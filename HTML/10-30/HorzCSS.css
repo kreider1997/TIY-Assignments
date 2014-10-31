@@ -1,4 +1,5 @@
 /*
+ALL ON CLICK IS JS FUNCITONS.  I LISTED THEM BELOW JUST TO COVER EVERYTHING THAT CHANGES.  THIS FILE ONLY DEALS WITH NON JS CHANGES
 - main li changes color from white to dark blue on hover.
 - main li on click, down arrow appears below the name.
 - main li on click, color stays blue.
@@ -9,15 +10,19 @@
 - For child li, on click will reset the screen so you are viewing the top of the page.  Nothing else changes.
 */
 
-.main:hover {
+.menu:hover {
   color: #02639d;
 }
-.main::before:hover {     /* this is the the ^ symbol that changes.  May list this in a before section */
-  content: "\f106";
+.menu::before:hover {     /* this is the the ^ symbol.  May list this in a before section.  Only color changes on hover.  The color will stay and symbol will change on click. */
   color: #02639d;
 }
 
-.child:hover{
+/* changing the bottle, including code needed in the img area that hover needS */
+.menu < li < li {
+  transition: opacity .2s
+}
+.menu < li < li:hover{
+  opacity: 0.5s;
 
 }
 
