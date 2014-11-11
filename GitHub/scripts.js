@@ -56,3 +56,15 @@
               }
            });
         }
+
+    var $list = $('#repo-list');
+      $template = $list.find('li.template')
+        .remove();
+
+    _.each(data.repos, function(repo){
+      var clone = $template.clone();
+      clone.html(_.template(close.html(), repo));
+      $list.append(clone.removeClass('template'));
+    });
+
+    $('#repo-list > li.template')

@@ -192,7 +192,7 @@ aside {
         <div class="container center">
           <a class="navbar-brand mega-octicon octicon-mark-github" href="#">
           </a>
-          <form class="navbar-form" role="search">
+          <form class="navbar-form" id="username-form" role="search">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Search GitHub">
             </div>
@@ -222,11 +222,11 @@ aside {
               <li><h3 id="name"></h3>
               <li><h4 id="user"></h4>
               <hr>
-              <li><span id="company" class="octicon octicon-organization"></span>
-              <li><span id="location" class="octicon octicon-location"></span>
-              <li><span class="octicon octicon-mail"></span><a id="email" href=" "></a>
-              <li><span class="octicon octicon-link"></span><a id="link" href=""></a>
-              <li><span id="created" class="octicon octicon-clock"></span></li>
+              <li><span id="company" class="octicon octicon-organization"></span>{{company}}</li>
+              <li><span id="location" class="octicon octicon-location"></span>{{location}}</li>
+              <li><span class="octicon octicon-mail"></span><a id="email" href=" "></a>{{email}}</li>
+              <li><span class="octicon octicon-link"></span><a id="link" href=""></a>{{link}}</li>
+              <li><span id="created" class="octicon octicon-clock"></span>{{created}}</li>
               <hr>
             <ul id="klout">
               <li class="col-md-4"><a id="followers"href="#"></a><br><p>Followers</p></li>
@@ -348,6 +348,7 @@ aside {
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="scripts.js"></script>
+    <script src="lodash.js"></script>
 
   </body>
 </html>
