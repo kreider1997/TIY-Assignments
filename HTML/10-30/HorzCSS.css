@@ -1,0 +1,60 @@
+/*
+ALL ON CLICK IS JS FUNCITONS.  I LISTED THEM BELOW JUST TO COVER EVERYTHING THAT CHANGES.  THIS FILE ONLY DEALS WITH NON JS CHANGES
+- main li changes color from white to dark blue on hover.
+- main li on click, down arrow appears below the name.
+- main li on click, color stays blue.
+- main li on click, little arrow in front of menu name changes from down facing to up facing.  Note:  this is not on the Our Mission or Contact li items.
+- main li on click, list with grey border and new list with graphic element appears for below three list items; lovely spirits, delicious beverages and fine liquors.  This has a swipe down and fade in transition.  On Mission and Contact do not have menues.  Note that the list does not go away clicking in blank space.  It will go away clicking on any main li item, even the one you are on.
+- main li for Our Mission and Contact items will reset the screen to view the top of the page.  Nothing else changes.
+- For child li, opacity changes on hover.
+- For child li, on click will reset the screen so you are viewing the top of the page.  Nothing else changes.
+*/
+
+/*  \f107 and \f106  used for the cheveron symbol in the heading menu.  Not sure if this will work.  Seem to be special unicode symbols */
+
+.menu:hover {
+  color: #02639d;
+}
+.menu::before:hover {     /* this is the the ^ symbol.  May list this in a before section.  Only color changes on hover.  The color will stay and symbol will change on click. */
+  color: #02639d;
+}
+
+
+/* changing the bottle, including code needed in the img area that hover needs */
+.menu < li < li {
+  transition: opacity .2s
+
+}
+.menu < li < li:hover{
+  opacity: 0.5s;
+
+}
+
+.menu < li < li:onclick {
+  transition: opacity .1s 0s;  /*this should be for the onclick javascript grey box*/
+}
+
+
+@media (min-width: 400px){
+
+}
+
+@media (min-width: 460px){
+
+}
+
+@media (min-width: 800px){
+
+}
+
+@media (min-width: 823px){
+
+}
+
+@media (min-width: 880px){
+
+}
+
+@media (min-width: 1040px){
+
+}

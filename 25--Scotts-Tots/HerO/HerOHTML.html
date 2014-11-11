@@ -1,0 +1,158 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+.jumbotron {
+  background-image: url('../images/header-bg.jpeg');
+  background-repeat: round;
+  /*background-color: #93C9FF;*/
+  /*background-blend-mode: multiply;*/
+  height: 190px;
+  margin-bottom: 0;
+  box-shadow: 0px 313px rgba(212, 218, 236, 0.2) inset;
+  -webkit-filter: saturate(30);
+  filter: saturate(30);
+
+}
+.surf {
+  margin-top: 260;
+}
+.surf > h1 {
+  font-size: 200%;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 3;
+}
+
+.surf > p {
+  font-size: 90%;
+  color: #123450;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* override Bootstrap's default nav styling */
+.nav {
+  padding-left: 34%;
+  margin:-180px -15px
+}
+.navbar-default {
+  background-color: transparent;
+  background-image: none;
+  border-color: none;
+  border: none;
+  margin-top: -5px;
+}
+
+.navbar-brand {
+  position: absolute;
+  left: 43%;
+  top: -300%;
+}
+
+.nav>li {
+  display: inline-block;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #123450;
+  text-shadow: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#search {
+  padding-right: 50px;
+  background-image: url('../images/icon-search.png');
+  background-repeat: no-repeat;
+  background-position: 75px 10px;
+  background-size: 20;
+}
+
+@media (min-width: 600px){
+/* Surf and Paddle font gets bigger.  Only font change.
+ * Surf logo moves to upper left and copy is added next to logo.
+ * About and Search move to upper right.
+*/
+  .surf > h1: {
+    font-size: 300%;
+    color: black;
+  }
+}
+
+@media (min-width: 800px) {
+/* Surf and paddle font gets bigger.  Only change.
+*/
+}
+
+@media (max-width: 1024px) {
+/*  Surf and paddle font gets bigger.  Only font change.
+ *  lower margin of background graphic increases.
+*/
+}
+
+</style>
+<body>
+
+
+
+  <div class="row">
+    <div class="col-xs-12">
+
+      <div class="jumbotron">
+      </div>
+        <!-- BEGIN nav -->
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+
+            <a class="navbar-brand" href="#">
+              <img src="../images/icon-logo.png">
+            </a>
+          </div>
+
+          <ul class="nav navbar-nav">
+            <li><a href="#">About</a></li>
+            <li id="search"><a href="#">Search</a></li>
+          </ul>
+          <div class="surf">
+            <h1>Surf & Paddle Co.</h1>
+            <p>An Iron Yard Academy Project, est 2014</p>
+          </div>
+        </div><!-- /.container-fluid -->
+      </nav><!-- /.navbar-collapse -->
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
