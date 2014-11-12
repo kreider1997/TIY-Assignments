@@ -1,9 +1,38 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<link href="MultiColumn.css" rel="stylesheet" type"text/css">
+<title>Blueish: MultiColumn</title>
 </head>
   <body>
-
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <form role="form">
+          <div class="form-group">
+            <label for="firstName">FIRST NAME</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Keith">
+          </div>
+        </form>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <form role="form">
+          <div class="form-group">
+            <label for="phoneNumber">PHONE NUMBER</label>
+            <input type="tel" class="form-control" id="phoneNumber" placeholder="">
+          </div>
+        </form>
+      </div>
+      <div class= "col-md-12 col-lg-4">
+        <form role="form">
+          <div class="form-group">
+            <label for="typeOfTalent">TYPE OF TALENT</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Choose a talent">
+          </div>
+        </form>
+      </div>
+    </div> <!-- end "row"-->
   </body>
 </html>
