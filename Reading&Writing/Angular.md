@@ -1,3 +1,4 @@
+Source:  [API documentation](https://docs.angularjs.org/api/)
 ###Function
   * angular.module -- returns an instance of type angular.Module, which you should also document
   * angular.extends
