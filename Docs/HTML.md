@@ -71,16 +71,20 @@ Represents a generic section of the document that has a thematic grouping of con
 ----
 
 **article**
-
+Represents a self-contained composition that is intended to be independently distributed or reusable such as forum posts, newspaper article, blog, etc.
+<article>
+</article>
 
 ----
 
 **h1**
-
+Header element.  Can be h1 to h6, with h1 being the largest/most important.
+<h1>Episode XXV Part Dux</h1>
 
 ----
 
 **p**
-
+Paragraph element.
+<p>Text here</p>
 
 ----
